@@ -93,7 +93,54 @@ const { useState, useEffect } = React;
     && window.location.hostname !== 'localhost';
   var subId = isSubdomain ? parts[0] : null;
   var id = urlId || subId || 'aleksandar-rakic';
-  var v = window.VENUES[id] || window.VENUES['aleksandar-rakic'];
+
+  // Try full detail entry first, then fall back to FIGHTERS card data
+  var v = window.VENUES[id];
+  if (!v) {
+    var f = (window.FIGHTERS || []).find(function(x) { return x.id === id; });
+    if (f) {
+      v = {
+        id: f.id,
+        name: f.name,
+        tagline_de: f.weightClass + ' · ' + f.city + ', ' + f.country,
+        tagline_en: f.weightClass + ' · ' + f.city + ', ' + f.country,
+        city: f.city,
+        country: f.country,
+        status: f.status,
+        styles: f.styles || [],
+        weightClass: f.weightClass,
+        record: f.record,
+        rating: f.rating || 4.0,
+        reviews: f.reviews || 0,
+        tags: f.tags || [],
+        gallery: [
+          { hue: f.accentHue,        a: f.img[0], b: f.img[1] },
+          { hue: (f.accentHue + 15) % 360, a: f.img[0], b: f.img[1] },
+          { hue: (f.accentHue + 30) % 360, a: f.img[0], b: f.img[1] },
+          { hue: (f.accentHue + 45) % 360, a: f.img[0], b: f.img[1] },
+          { hue: (f.accentHue + 60) % 360, a: f.img[0], b: f.img[1] },
+        ],
+        nextFight: {
+          opponent_de: 'TBD', opponent_en: 'TBD',
+          date_de: '2026', date_en: '2026',
+          event: 'TBD', location: 'TBD',
+        },
+        fightHistory: [],
+        stats: {
+          age: '—', height: '—', reach: '—', stance: '—',
+          nationality: f.country,
+          gym: '—',
+          born: f.city + ', ' + f.country,
+        },
+        reviews_list: [],
+        career_log: [],
+        similar: [],
+        sponsors: f.sponsors || [],
+      };
+    } else {
+      v = window.VENUES['aleksandar-rakic'];
+    }
+  }
   window.VENUE = v;
   document.title = v.name + ' — FightFolio.at';
 })();
