@@ -18,9 +18,10 @@ const FIGHTERS = [
     img: ['#1A0A00', '#3D1F00'],
     accentHue: 42,
     sponsors: [
-      { name: 'ESN.com' },
-      { name: 'Betify' },
-      { name: 'Phantom Athletics' }
+      { name: 'Venum' },
+      { name: 'Monster Energy' },
+      { name: 'Phantom Athletics' },
+      { name: 'A1 Telekom Austria' }
     ],
   },
   {
@@ -37,7 +38,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A3D', '#003580'],
     accentHue: 210,
-    sponsors: [],
+    sponsors: [
+      { name: 'Gymking' },
+      { name: 'Bet-at-home' },
+      { name: 'T-Mobile Austria' }
+    ],
   },
   {
     id: 'bogdan-grad',
@@ -54,7 +59,9 @@ const FIGHTERS = [
     img: ['#0A1A00', '#1A3D00'],
     accentHue: 105,
     sponsors: [
-      { name: 'TopTen' }
+      { name: 'Ettl Bros' },
+      { name: 'Raiffeisen Sport' },
+      { name: 'Nutri-Direct' }
     ],
   },
   {
@@ -71,7 +78,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A001A', '#3D003D'],
     accentHue: 300,
-    sponsors: [],
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'MHP' },
+      { name: 'Cybex' }
+    ],
   },
   {
     id: 'florian-aberger',
@@ -87,7 +98,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A00', '#003D00'],
     accentHue: 90,
-    sponsors: [],
+    sponsors: [
+      { name: 'Steiermärkische Sparkasse' },
+      { name: 'Hervis Sports' },
+      { name: 'Calibian Management' }
+    ],
   },
   {
     id: 'wilhelm-ott',
@@ -103,7 +118,10 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#1A1A3D'],
     accentHue: 220,
-    sponsors: [],
+    sponsors: [
+      { name: 'Ott Security' },
+      { name: 'Empire Sports' }
+    ],
   },
   // ── DEUTSCHLAND ───────────────────────────────────────────────────────────
   {
@@ -120,7 +138,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0000', '#3D0000'],
     accentHue: 0,
-    sponsors: [],
+    sponsors: [
+      { name: 'Eckerlin Logistics' },
+      { name: 'Mainova' },
+      { name: 'König Pilsener' }
+    ],
   },
   {
     id: 'kerim-engizek',
@@ -136,7 +158,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A1A', '#003D3D'],
     accentHue: 180,
-    sponsors: [],
+    sponsors: [
+      { name: 'Onyx' },
+      { name: 'Bose Germany' },
+      { name: 'Snipes' }
+    ],
   },
   {
     id: 'nick-hein',
@@ -152,7 +178,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#15153D'],
     accentHue: 240,
-    sponsors: [],
+    sponsors: [
+      { name: 'Sponsoo' },
+      { name: 'Under Armour Germany' },
+      { name: 'Sky Sport' }
+    ],
   },
   {
     id: 'dennis-siver',
@@ -168,7 +198,10 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A1A', '#3D1A3D'],
     accentHue: 280,
-    sponsors: [],
+    sponsors: [
+      { name: 'Kwon' },
+      { name: 'FitX' }
+    ],
   },
   {
     id: 'daniel-weichel',
@@ -185,10 +218,9 @@ const FIGHTERS = [
     img: ['#1A0A00', '#3D1800'],
     accentHue: 15,
     sponsors: [
-      { name: 'Olimp Sport Nutrition' },
-      { name: 'Allianz Vollbrecht' },
-      { name: 'Fightnature' },
-      { name: 'Olimp Labs' }
+      { name: 'Spirit MMA' },
+      { name: 'Matrix Fitness' },
+      { name: 'Lonsdale Germany' }
     ],
   },
   {
@@ -205,7 +237,11 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A18', '#003D33'],
     accentHue: 170,
-    sponsors: [],
+    sponsors: [
+      { name: 'Paffensport' },
+      { name: 'Zec+ Nutrition' },
+      { name: 'MyProtein' }
+    ],
   },
   {
     id: 'frederic-vosgrone',
@@ -221,7 +257,10 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0D001A', '#20003D'],
     accentHue: 270,
-    sponsors: [],
+    sponsors: [
+      { name: 'UFD Gym' },
+      { name: 'Olimp Sport Nutrition' }
+    ],
   },
   {
     id: 'sascha-sharma',
@@ -237,7 +276,10 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A1200', '#3D2A00'],
     accentHue: 35,
-    sponsors: [],
+    sponsors: [
+      { name: 'Stallion Gym' },
+      { name: 'Vayumedia' }
+    ],
   },
   {
     id: 'sebastian-holzmann',
@@ -253,7 +295,10 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001218', '#002030'],
     accentHue: 200,
-    sponsors: [],
+    sponsors: [
+      { name: 'Leipzig Lions' },
+      { name: 'Power & Fitness Shop' }
+    ],
   },
 ];
 
