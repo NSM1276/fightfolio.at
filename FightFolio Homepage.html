@@ -87,6 +87,7 @@ function App() {
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState({
     proOnly: false,
+    country: null,
     city: null,
     styles: [],
   });
@@ -115,6 +116,7 @@ function App() {
   const filtered = useMemo(() => {
     return window.FIGHTERS.filter((f) => {
       if (filters.proOnly && f.status !== 'verified') return false;
+      if (filters.country && f.country !== filters.country) return false;
       if (filters.city && f.city !== filters.city) return false;
       if (filters.styles.length && !f.styles.some((s) => filters.styles.includes(s))) return false;
       if (query) {
@@ -137,7 +139,7 @@ function App() {
   }, [filtered, tweaks.bentoVariety, tweaks.showFeatured]);
 
   const resetFilters = () => {
-    setFilters({ proOnly: false, city: null, styles: [] });
+    setFilters({ proOnly: false, country: null, city: null, styles: [] });
     setQuery('');
   };
 

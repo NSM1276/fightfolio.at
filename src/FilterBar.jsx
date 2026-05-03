@@ -1,6 +1,7 @@
-// Sticky filter bar: pro toggle, city dropdown, fight-style pills
+// Sticky filter bar: pro toggle, country dropdown, city dropdown, fight-style pills
 const FilterBar = ({ lang, filters, setFilters, resultCount }) => {
   const c = window.COPY[lang];
+  const [countryOpen, setCountryOpen] = React.useState(false);
   const [cityOpen, setCityOpen] = React.useState(false);
   const dropRef = React.useRef(null);
 
@@ -19,7 +20,13 @@ const FilterBar = ({ lang, filters, setFilters, resultCount }) => {
     setFilters({ ...filters, styles: next });
   };
 
+  const selectedCountry = window.COUNTRIES.find((co) => co.id === filters.country);
   const selectedCity = window.CITIES.find((ci) => ci.id === filters.city);
+
+  // Filter cities by selected country
+  const citiesByCountry = filters.country
+    ? window.CITIES.filter((ci) => ci.country === filters.country)
+    : window.CITIES;
 
   return (
     <div style={{
@@ -65,6 +72,49 @@ const FilterBar = ({ lang, filters, setFilters, resultCount }) => {
           {c.proOnly}
         </button>
 
+        {/* Country dropdown */}
+        <div style={{ position: 'relative' }}>
+          <button
+            onClick={(e) => { e.stopPropagation(); setCountryOpen((v) => !v); }}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              padding: '8px 12px',
+              background: filters.country ? 'var(--primary)' : 'var(--card)',
+              border: `1px solid ${filters.country ? 'var(--accent)' : 'var(--border)'}`,
+              borderRadius: 999,
+              color: filters.country ? 'var(--accent)' : 'var(--text-primary)',
+              fontFamily: 'inherit', fontWeight: 600, fontSize: 13,
+              cursor: 'pointer',
+              transition: 'all var(--dur-fast) var(--ease-out)',
+            }}
+          >
+            <span style={{ fontSize: 14 }}>🌍</span>
+            {selectedCountry ? selectedCountry.label : c.allCountries}
+            <window.Icon.chevron size={12} />
+          </button>
+          {countryOpen && (
+            <div style={{
+              position: 'absolute', top: 'calc(100% + 6px)', left: 0,
+              background: 'var(--card)', border: '1px solid var(--border)',
+              borderRadius: 12, padding: 8,
+              boxShadow: 'var(--shadow-elev)',
+              width: 220, maxHeight: 320, overflowY: 'auto',
+              zIndex: 30,
+            }}>
+              <button onClick={() => { setFilters({ ...filters, country: null, city: null }); setCountryOpen(false); }}
+                style={dropItemStyle(!filters.country)}>
+                {c.allCountries}
+              </button>
+              {window.COUNTRIES.map((co) => (
+                <button key={co.id} onClick={() => { setFilters({ ...filters, country: co.id, city: null }); setCountryOpen(false); }}
+                  style={dropItemStyle(filters.country === co.id)}>
+                  {co.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
         {/* City dropdown */}
         <div ref={dropRef} style={{ position: 'relative' }}>
           <button
@@ -98,7 +148,7 @@ const FilterBar = ({ lang, filters, setFilters, resultCount }) => {
                 style={dropItemStyle(!filters.city)}>
                 {c.allCities}
               </button>
-              {window.CITIES.map((ci) => (
+              {citiesByCountry.map((ci) => (
                 <button key={ci.id} onClick={() => { setFilters({ ...filters, city: ci.id }); setCityOpen(false); }}
                   style={dropItemStyle(filters.city === ci.id)}>
                   {ci.label}

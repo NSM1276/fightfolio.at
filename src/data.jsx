@@ -309,10 +309,12 @@ const COPY = {
     navSubmit: 'Kämpfer melden',
     navImprint: 'Impressum',
     // Hero
-    heroTagline: 'MMA-Kämpfer aus Österreich und Deutschland entdecken',
+    heroTagline: 'MMA-Kämpfer aus ganz Europa entdecken',
     searchPlaceholder: 'Kämpfer, Gewichtsklasse oder Stadt suchen…',
     // Filter
     proOnly: 'Nur Profis',
+    country: 'Land',
+    allCountries: 'Alle Länder',
     city: 'Stadt',
     allCities: 'Alle Städte',
     // Status labels
@@ -320,14 +322,14 @@ const COPY = {
     statusSelf: 'Semi-Profi',
     statusUnknown: 'Amateur',
     // Results
-    resultsCount: (n) => `${n} ${n === 1 ? 'Kämpfer' : 'Kämpfer'} in AT & DE`,
+    resultsCount: (n) => `${n} ${n === 1 ? 'Kämpfer' : 'Kämpfer'} in Europa`,
     emptyTitle: 'Keine Ergebnisse',
     emptyBody: 'Versuche eine andere Stadt oder Gewichtsklasse.',
     reset: 'Filter zurücksetzen',
     featured: 'Featured',
     recordLabel: 'Rekord',
     // Footer
-    footerBlurb: 'Die vollständigste MMA-Datenbank für Österreich und Deutschland. Faktenbasiert, transparent, werbefrei.',
+    footerBlurb: 'Die vollständigste MMA-Datenbank für Europa. Faktenbasiert, transparent, werbefrei.',
     footerSections: {
       product: ['Home', 'Kämpfer melden', 'Karte', 'Gewichtsklassen'],
       company: ['Über uns', 'Impressum', 'Datenschutz', 'Kontakt'],
@@ -352,21 +354,23 @@ const COPY = {
     navHome: 'Home',
     navSubmit: 'Submit Fighter',
     navImprint: 'Imprint',
-    heroTagline: 'Discover MMA fighters from Austria and Germany',
+    heroTagline: 'Discover MMA fighters across Europe',
     searchPlaceholder: 'Search fighters, weight class, or city…',
     proOnly: 'Pros only',
+    country: 'Country',
+    allCountries: 'All countries',
     city: 'City',
     allCities: 'All cities',
     statusVerified: 'Pro Fighter',
     statusSelf: 'Semi-Pro',
     statusUnknown: 'Amateur',
-    resultsCount: (n) => `${n} ${n === 1 ? 'fighter' : 'fighters'} in AT & DE`,
+    resultsCount: (n) => `${n} ${n === 1 ? 'fighter' : 'fighters'} across Europe`,
     emptyTitle: 'No results',
     emptyBody: 'Try a different city or weight class.',
     reset: 'Reset filters',
     featured: 'Featured',
     recordLabel: 'Record',
-    footerBlurb: 'The most complete MMA database for Austria and Germany. Fact-based, transparent, ad-free.',
+    footerBlurb: 'The most complete MMA database for Europe. Fact-based, transparent, ad-free.',
     footerSections: {
       product: ['Home', 'Submit Fighter', 'Map', 'Weight Classes'],
       company: ['About', 'Imprint', 'Privacy', 'Contact'],
@@ -393,20 +397,25 @@ const FIGHT_STYLES = ['Striker', 'Kickboxer', 'Wrestler', 'BJJ', 'Grappler', 'MM
 
 const CITIES = [
   // Austria
-  { id: 'Wien', label: 'Wien 🇦🇹' },
-  { id: 'Graz', label: 'Graz 🇦🇹' },
-  { id: 'Salzburg', label: 'Salzburg 🇦🇹' },
-  { id: 'Innsbruck', label: 'Innsbruck 🇦🇹' },
-  { id: 'Linz', label: 'Linz 🇦🇹' },
+  { id: 'Wien', label: 'Wien 🇦🇹', country: 'Austria' },
+  { id: 'Graz', label: 'Graz 🇦🇹', country: 'Austria' },
+  { id: 'Salzburg', label: 'Salzburg 🇦🇹', country: 'Austria' },
+  { id: 'Innsbruck', label: 'Innsbruck 🇦🇹', country: 'Austria' },
+  { id: 'Linz', label: 'Linz 🇦🇹', country: 'Austria' },
   // Germany
-  { id: 'Frankfurt', label: 'Frankfurt 🇩🇪' },
-  { id: 'München', label: 'München 🇩🇪' },
-  { id: 'Hamburg', label: 'Hamburg 🇩🇪' },
-  { id: 'Düsseldorf', label: 'Düsseldorf 🇩🇪' },
-  { id: 'Köln', label: 'Köln 🇩🇪' },
-  { id: 'Leipzig', label: 'Leipzig 🇩🇪' },
-  { id: 'Stuttgart', label: 'Stuttgart 🇩🇪' },
-  { id: 'Berlin', label: 'Berlin 🇩🇪' },
+  { id: 'Frankfurt', label: 'Frankfurt 🇩🇪', country: 'Germany' },
+  { id: 'München', label: 'München 🇩🇪', country: 'Germany' },
+  { id: 'Hamburg', label: 'Hamburg 🇩🇪', country: 'Germany' },
+  { id: 'Düsseldorf', label: 'Düsseldorf 🇩🇪', country: 'Germany' },
+  { id: 'Köln', label: 'Köln 🇩🇪', country: 'Germany' },
+  { id: 'Leipzig', label: 'Leipzig 🇩🇪', country: 'Germany' },
+  { id: 'Stuttgart', label: 'Stuttgart 🇩🇪', country: 'Germany' },
+  { id: 'Berlin', label: 'Berlin 🇩🇪', country: 'Germany' },
 ];
 
-Object.assign(window, { FIGHTERS, COPY, FIGHT_STYLES, CITIES });
+const COUNTRIES = [
+  { id: 'Austria', label: '🇦🇹 Austria' },
+  { id: 'Germany', label: '🇩🇪 Germany' },
+];
+
+Object.assign(window, { FIGHTERS, COPY, FIGHT_STYLES, CITIES, COUNTRIES });
