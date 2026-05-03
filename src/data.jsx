@@ -316,6 +316,7 @@ const FIGHTERS = [
     featured: true,
     img: ['#2A0000', '#700000'],
     accentHue: 0,
+    stats: { age: 29, height: '170 cm', reach: '175 cm', stance: 'Orthodox', nationality: 'Georgisch-Spanisch', gym: 'Kings MMA', born: 'Tiflis, Georgien' },
     sponsors: [
       { name: 'Oura Ring' },
       { name: 'Venum' },
@@ -338,6 +339,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001040', '#002080'],
     accentHue: 220,
+    stats: { age: 33, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Team Kaobon', born: 'Wigan, England' },
     sponsors: [
       { name: 'Gymshark' },
       { name: 'MyProtein' },
@@ -360,6 +362,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0008', '#3D0015'],
     accentHue: 350,
+    stats: { age: 43, height: '185 cm', reach: '193 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW Akademia', born: 'Cieszyn, Polen' },
     sponsors: [
       { name: 'Subaru Poland' },
       { name: 'SuperBet' },
@@ -381,6 +384,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#00001A', '#00003D'],
     accentHue: 240,
+    stats: { age: 30, height: '178 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Paris', born: 'Frankreich' },
     sponsors: [
       { name: 'Venum' },
       { name: 'Unkut' },
@@ -401,6 +405,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A001A', '#1A0040'],
     accentHue: 270,
+    stats: { age: 30, height: '170 cm', reach: '177 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'Team Noël Le Gall', born: 'Paris, Frankreich' },
     sponsors: [
       { name: 'Free Mobile' },
       { name: 'Venum' },
@@ -421,6 +426,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#200004', '#400008'],
     accentHue: 10,
+    stats: { age: 34, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'Grappling Poznań', born: 'Gdańsk, Polen' },
     sponsors: [
       { name: 'Red Bull' },
       { name: 'New Balance Poland' },
@@ -441,6 +447,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#000A1A', '#001040'],
     accentHue: 200,
+    stats: { age: 34, height: '165 cm', reach: '168 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Nice', born: 'Nizza, Frankreich' },
     sponsors: [
       { name: 'PUMA' },
       { name: 'Venum' },
@@ -462,6 +469,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A08', '#003D15'],
     accentHue: 120,
+    stats: { age: 32, height: '185 cm', reach: '192 cm', stance: 'Orthodox', nationality: 'Italienisch', gym: 'Kings MMA', born: 'Mezzocorona, Italien' },
     sponsors: [
       { name: 'Dolce & Gabbana' },
       { name: 'Venum' },
@@ -484,6 +492,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001018', '#002030'],
     accentHue: 195,
+    stats: { age: 34, height: '183 cm', reach: '188 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Team Renegade', born: 'Birmingham, England' },
     sponsors: [
       { name: 'Moncler' },
       { name: 'Monster Energy' },
@@ -506,6 +515,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A00', '#3D1800'],
     accentHue: 30,
+    stats: { age: 40, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Niederländisch-Armenisch', gym: "Mike's Gym", born: 'Isfahan, Iran' },
     sponsors: [
       { name: '32Red' },
       { name: 'Affliction' },
@@ -527,6 +537,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001208', '#002810'],
     accentHue: 145,
+    stats: { age: 34, height: '185 cm', reach: '190 cm', stance: 'Southpaw', nationality: 'Italienisch', gym: 'Minerva MMA Roma', born: 'Rom, Italien' },
     sponsors: [
       { name: 'Leone 1947' },
       { name: 'EthicSport' }
@@ -547,6 +558,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0020', '#1A0040'],
     accentHue: 260,
+    stats: { age: 31, height: '178 cm', reach: '178 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Next Generation Liverpool', born: 'Liverpool, England' },
     sponsors: [
       { name: 'Barstool Sports' },
       { name: 'Applied Nutrition' }
@@ -567,6 +579,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0800', '#3D1500'],
     accentHue: 45,
+    stats: { age: 36, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Niederländisch', gym: 'Allstars Training Center', born: 'Breda, Niederlande' },
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -588,6 +601,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0010', '#3D0020'],
     accentHue: 330,
+    stats: { age: 31, height: '183 cm', reach: '185 cm', stance: 'Southpaw', nationality: 'Kroatisch', gym: 'UFD Gym Düsseldorf', born: 'Split, Kroatien' },
     sponsors: [
       { name: 'Olimp' },
       { name: 'SuperBet' },
@@ -609,6 +623,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A10', '#003D20'],
     accentHue: 160,
+    stats: { age: 32, height: '183 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Schwedisch-Tschetschenisch', gym: 'Allstars Stockholm', born: 'Tschetschenien, Russland' },
     sponsors: [
       { name: 'Smilodox' },
       { name: 'Venum' }
@@ -629,6 +644,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001020', '#002050'],
     accentHue: 230,
+    stats: { age: 35, height: '196 cm', reach: '211 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Paris', born: 'Frankreich' },
     sponsors: [
       { name: 'Venum' },
       { name: 'Gymshark' },
@@ -651,6 +667,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A20', '#15153D'],
     accentHue: 215,
+    stats: { age: 47, height: '185 cm', reach: '190 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Tristar Gym (ret.)', born: 'Manchester, England' },
     sponsors: [
       { name: 'Manscaped' },
       { name: 'DraftKings' },
@@ -673,6 +690,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#200006', '#430010'],
     accentHue: 345,
+    stats: { age: 38, height: '165 cm', reach: '168 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'Tiger Muay Thai', born: 'Białystok, Polen' },
     sponsors: [
       { name: 'PUMA Poland' },
       { name: 'Samsung Poland' },
@@ -695,6 +713,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#002010', '#004820'],
     accentHue: 140,
+    stats: { age: 28, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Irisch', gym: 'SBG Ireland', born: 'Belfast, Irland' },
     sponsors: [
       { name: 'Monster Energy' },
       { name: 'Gym King' },
@@ -716,6 +735,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A1A', '#003D3D'],
     accentHue: 185,
+    stats: { age: 39, height: '193 cm', reach: '196 cm', stance: 'Southpaw', nationality: 'Schwedisch', gym: 'Allstars Training Center', born: 'Arboga, Schweden' },
     sponsors: [
       { name: 'Unibet' },
       { name: 'MyProtein' },
@@ -737,6 +757,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A00', '#3A1800'],
     accentHue: 25,
+    stats: { age: 32, height: '168 cm', reach: '178 cm', stance: 'Orthodox', nationality: 'Portugiesisch', gym: 'MMA Factory Lissabon', born: 'Angola' },
     sponsors: [
       { name: 'Venum' },
       { name: 'Monster Energy' },
@@ -758,6 +779,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0005', '#380010'],
     accentHue: 5,
+    stats: { age: 41, height: '185 cm', reach: '190 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW Akademia', born: 'Stettin, Polen' },
     sponsors: [
       { name: 'Olimp Sport Nutrition' },
       { name: 'Pitbull West Coast' },
@@ -779,6 +801,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001218', '#002530'],
     accentHue: 205,
+    stats: { age: 29, height: '175 cm', reach: '180 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Capital City MMA Cardiff', born: 'Cardiff, Wales' },
     sponsors: [
       { name: 'Dragon Energy' },
       { name: 'Venum' },
@@ -800,6 +823,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0C00', '#3D1C00'],
     accentHue: 28,
+    stats: { age: 45, height: '193 cm', reach: '203 cm', stance: 'Southpaw', nationality: 'Niederländisch', gym: "Mike's Gym (ret.)", born: 'Hounslow, England' },
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'Venum' },
@@ -821,6 +845,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#080820', '#12123D'],
     accentHue: 245,
+    stats: { age: 29, height: '170 cm', reach: '172 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Tillery Combat', born: 'Aberdare, Wales' },
     sponsors: [
       { name: 'Under Armour Wales' },
       { name: 'Monster Energy' },
@@ -842,6 +867,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0008', '#380015'],
     accentHue: 355,
+    stats: { age: 32, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Dänisch', gym: 'Next Round Copenhagen', born: 'Kopenhagen, Dänemark' },
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein Denmark' },
@@ -863,6 +889,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001820', '#003040'],
     accentHue: 195,
+    stats: { age: 37, height: '178 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Isländisch', gym: 'SBG Ireland', born: 'Reykjavik, Island' },
     sponsors: [
       { name: 'Icelandic Glacial' },
       { name: 'Venum' },
@@ -884,6 +911,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A1520', '#152D40'],
     accentHue: 210,
+    stats: { age: 31, height: '170 cm', reach: '175 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'SBG Ipswich', born: 'Ipswich, England' },
     sponsors: [
       { name: 'Gymshark' },
       { name: 'MyProtein' },
@@ -905,6 +933,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A0A', '#003A18'],
     accentHue: 145,
+    stats: { age: 29, height: '168 cm', reach: '173 cm', stance: 'Orthodox', nationality: 'Irisch', gym: 'SBG Ireland', born: 'Belfast, Irland' },
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -926,6 +955,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#200008', '#400015'],
     accentHue: 350,
+    stats: { age: 40, height: '165 cm', reach: '163 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW / MMA Factory', born: 'Łódź, Polen' },
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'Samsung Poland' },
@@ -946,6 +976,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A0A', '#3A1515'],
     accentHue: 5,
+    stats: { age: 39, height: '188 cm', reach: '193 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'WCA Fight Team Warschau', born: 'Warschau, Polen' },
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'SuperBet Poland' }
