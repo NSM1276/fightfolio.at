@@ -75,6 +75,18 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
         background: `linear-gradient(135deg, ${r.img[0]} 0%, ${r.img[1]} 100%)`,
         overflow: 'hidden',
       }}>
+        {/* Real photo — shown if fighters/{id}/main.webp exists */}
+        <img
+          src={`fighters/${r.id}/main.webp`}
+          alt={r.name}
+          onError={(e) => { e.target.style.display = 'none'; }}
+          style={{
+            position: 'absolute', inset: 0,
+            width: '100%', height: '100%',
+            objectFit: 'cover', objectPosition: 'center top',
+            display: 'block',
+          }}
+        />
         {/* Accent glow */}
         <div aria-hidden style={{
           position: 'absolute', inset: 0,

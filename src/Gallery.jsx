@@ -3,6 +3,15 @@ const Gallery = ({ venue, lang }) => {
   const c = window.DETAIL_COPY[lang];
   const [lightbox, setLightbox] = React.useState(null);
 
+  // Photo paths: main.webp + photo-2..5.webp — shown when file exists, gradient otherwise
+  const photoUrls = [
+    `fighters/${venue.id}/main.webp`,
+    `fighters/${venue.id}/photo-2.webp`,
+    `fighters/${venue.id}/photo-3.webp`,
+    `fighters/${venue.id}/photo-4.webp`,
+    `fighters/${venue.id}/photo-5.webp`,
+  ];
+
   const photo = (g, i, big) => (
     <div style={{
       width: '100%', height: '100%',
@@ -14,10 +23,25 @@ const Gallery = ({ venue, lang }) => {
       position: 'relative',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
     }}>
+      {/* Real photo — hides itself if file doesn't exist */}
+      <img
+        src={photoUrls[i]}
+        alt=""
+        onError={(e) => { e.target.style.display = 'none'; }}
+        style={{
+          position: 'absolute', inset: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover',
+          objectPosition: big ? 'center top' : 'center center',
+          display: 'block',
+          zIndex: 1,
+        }}
+      />
       {big && (
         <window.Icon.glove size={64} style={{
           opacity: 0.12, color: '#fff',
           position: 'absolute', bottom: 24, right: 24,
+          zIndex: 0,
         }} />
       )}
     </div>
@@ -49,6 +73,7 @@ const Gallery = ({ venue, lang }) => {
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 color: '#fff', fontWeight: 700, fontSize: 14,
                 gap: 6,
+                zIndex: 2,
               }}>
                 <window.Icon.layers size={16} />
                 {c.seeAllPhotos}
