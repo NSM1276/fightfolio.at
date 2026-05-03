@@ -118,9 +118,9 @@ function App() {
       if (filters.city && f.city !== filters.city) return false;
       if (filters.styles.length && !f.styles.some((s) => filters.styles.includes(s))) return false;
       if (query) {
-        const q = query.toLowerCase();
         const hay = `${f.name} ${f.city} ${f.country} ${(f.styles || []).join(' ')} ${(f.tags || []).join(' ')} ${f.weightClass}`.toLowerCase();
-        if (!hay.includes(q)) return false;
+        const words = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+        if (!words.every(w => hay.includes(w))) return false;
       }
       return true;
     });
