@@ -125,7 +125,7 @@ const { useState, useEffect } = React;
           date_de: '2026', date_en: '2026',
           event: 'TBD', location: 'TBD',
         },
-        fightHistory: [],
+        fightHistory: f.fightHistory || [],
         stats: {
           age: '—', height: '—', reach: '—', stance: '—',
           nationality: f.country,
@@ -157,6 +157,10 @@ const { useState, useEffect } = React;
         }
       });
       v = Object.assign({}, v, { stats: merged });
+    }
+    // fightHistory: use cardEntry.fightHistory if venue has none
+    if ((!v.fightHistory || v.fightHistory.length === 0) && cardEntry.fightHistory && cardEntry.fightHistory.length > 0) {
+      v = Object.assign({}, v, { fightHistory: cardEntry.fightHistory });
     }
   }
 
