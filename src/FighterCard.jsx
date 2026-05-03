@@ -23,6 +23,10 @@ const COUNTRY_META = {
   'Romania':        { flag: '🇷🇴', color: '#3B82F6' },
   'Serbia':         { flag: '🇷🇸', color: '#EF4444' },
   'Georgia':        { flag: '🇬🇪', color: '#EF4444' },
+  'Lithuania':      { flag: '🇱🇹', color: '#F59E0B' },
+  'Albania':        { flag: '🇦🇱', color: '#EF4444' },
+  'Slovakia':       { flag: '🇸🇰', color: '#3B82F6' },
+  'Russia':         { flag: '🇷🇺', color: '#EF4444' },
 };
 
 // Fighter card — bento grid member. Supports 3 sizes (1x1, 2x1, 2x2)
