@@ -141,6 +141,25 @@ const { useState, useEffect } = React;
       v = window.VENUES['aleksandar-rakic'];
     }
   }
+  // Always pull sponsors + stats from FIGHTERS card data when missing in v
+  var cardEntry = (window.FIGHTERS || []).find(function(x) { return x.id === v.id; });
+  if (cardEntry) {
+    // Sponsors: merge if VENUES entry has none
+    if ((!v.sponsors || v.sponsors.length === 0) && cardEntry.sponsors && cardEntry.sponsors.length > 0) {
+      v = Object.assign({}, v, { sponsors: cardEntry.sponsors });
+    }
+    // Stats: fill '—' placeholders with cardEntry.stats values if available
+    if (cardEntry.stats && v.stats) {
+      var merged = Object.assign({}, v.stats);
+      Object.keys(cardEntry.stats).forEach(function(k) {
+        if (merged[k] === '—' || merged[k] === undefined) {
+          merged[k] = cardEntry.stats[k];
+        }
+      });
+      v = Object.assign({}, v, { stats: merged });
+    }
+  }
+
   window.VENUE = v;
   document.title = v.name + ' — FightFolio.at';
 })();

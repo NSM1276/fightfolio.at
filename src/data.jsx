@@ -967,6 +967,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A0A', '#003D1A'],
     accentHue: 145,
+    stats: { age: 28, height: '191 cm', reach: '188 cm', stance: 'Orthodox', nationality: 'Irisch', gym: 'Kill Cliff FC', born: 'Dublin, Irland' },
     sponsors: [
       { name: 'Ichor' },
       { name: 'Venum' },
@@ -988,6 +989,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0800', '#3D1600'],
     accentHue: 22,
+    stats: { age: 33, height: '191 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Spanisch', gym: 'Bandog Fight Club', born: 'Gijón, Spanien' },
     sponsors: [
       { name: 'Everlast Spain' },
       { name: 'Prozis' },
@@ -1008,6 +1010,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A000A', '#3A0015'],
     accentHue: 345,
+    stats: { age: 27, height: '165 cm', reach: '170 cm', stance: 'Orthodox', nationality: 'Russisch', gym: 'Team Fedor', born: 'Russland' },
     sponsors: [
       { name: 'Gorilla Energy' },
       { name: 'Venum' },
@@ -1028,6 +1031,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0800', '#3D2000'],
     accentHue: 28,
+    stats: { age: 33, height: '185 cm', reach: '190 cm', stance: 'Orthodox', nationality: 'Niederländisch', gym: 'Team Mousasi', born: 'Leiden, Niederlande' },
     sponsors: [
       { name: '32Red' },
       { name: 'Venum' },
@@ -1048,6 +1052,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001508', '#002E12'],
     accentHue: 140,
+    stats: { age: 32, height: '191 cm', reach: '198 cm', stance: 'Orthodox', nationality: 'Litauisch', gym: 'Gintas Combat', born: 'Vilnius, Litauen' },
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -1068,6 +1073,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#181830'],
     accentHue: 230,
+    stats: { age: 35, height: '183 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Deutsch', gym: 'UFD Gym Düsseldorf', born: 'Düsseldorf, Deutschland' },
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'Paffensport' },
@@ -1088,6 +1094,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A001A', '#180030'],
     accentHue: 270,
+    stats: { age: 33, height: '178 cm', reach: '188 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'American Top Team', born: 'London, Großbritannien' },
     sponsors: [
       { name: 'Venum' },
       { name: 'Gym King' },
@@ -1108,6 +1115,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A1400', '#3A2A00'],
     accentHue: 45,
+    stats: { age: 28, height: '170 cm', reach: '175 cm', stance: 'Orthodox', nationality: 'Belgisch', gym: 'Team Keita', born: 'Brüssel, Belgien' },
     sponsors: [
       { name: 'Onyx' },
       { name: 'Venum' },
@@ -1128,6 +1136,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001833', '#00285A'],
     accentHue: 205,
+    stats: { age: 36, height: '178 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Tiger Muay Thai', born: 'Manchester, England' },
     sponsors: [
       { name: 'Gymshark' },
       { name: 'Monster Energy' },
@@ -1148,6 +1157,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0000', '#3D0000'],
     accentHue: 0,
+    stats: { age: 25, height: '168 cm', reach: '170 cm', stance: 'Orthodox', nationality: 'Albanisch', gym: 'Allstars Training Center', born: 'Tirana, Albanien' },
     sponsors: [
       { name: 'Smilodox' },
       { name: 'Venum' },
@@ -1168,6 +1178,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001020', '#001830'],
     accentHue: 215,
+    stats: { age: 30, height: '163 cm', reach: '163 cm', stance: 'Orthodox', nationality: 'Slowakisch', gym: 'Team Hardy', born: 'Bratislava, Slowakei' },
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -1188,6 +1199,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0005', '#380010'],
     accentHue: 355,
+    stats: { age: 41, height: '180 cm', reach: '188 cm', stance: 'Orthodox', nationality: 'Dänisch', gym: 'Rumble Sports', born: 'Kopenhagen, Dänemark' },
     sponsors: [
       { name: 'Unibet Denmark' },
       { name: 'Venum' },
@@ -1208,6 +1220,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0014', '#14002A'],
     accentHue: 265,
+    stats: { age: 37, height: '191 cm', reach: '196 cm', stance: 'Southpaw', nationality: 'Serbisch', gym: 'UFD Gym Düsseldorf', born: 'Belgrad, Serbien' },
     sponsors: [
       { name: 'Olimp' },
       { name: 'Bet-at-home' },
@@ -1228,6 +1241,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#00101A', '#001A2A'],
     accentHue: 200,
+    stats: { age: 34, height: '170 cm', reach: '168 cm', stance: 'Orthodox', nationality: 'Schwedisch', gym: 'Arte Suave', born: 'Stockholm, Schweden' },
     sponsors: [
       { name: 'Venum' },
       { name: 'Reebok Sweden' },
@@ -1248,6 +1262,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0600', '#380E00'],
     accentHue: 18,
+    stats: { age: 26, height: '183 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Spanisch', gym: 'Lokal Spanien', born: 'Spanien' },
     sponsors: [
       { name: 'Everlast' },
       { name: 'Local Spanish Brands' },
