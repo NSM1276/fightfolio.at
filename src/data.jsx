@@ -317,6 +317,10 @@ const FIGHTERS = [
     img: ['#2A0000', '#700000'],
     accentHue: 0,
     stats: { age: 29, height: '170 cm', reach: '175 cm', stance: 'Orthodox', nationality: 'Georgisch-Spanisch', gym: 'Kings MMA', born: 'Tiflis, Georgien' },
+    fightHistory: [
+      { result: 'W', opponent: 'Alexander Volkanovski', method: 'KO', event: 'UFC 298', round: 2, time: '4:47', date: '2024-02-17', org: 'UFC' },
+      { result: 'W', opponent: 'Bryce Mitchell', method: 'Submission', event: 'UFC 282', round: 1, time: '2:14', date: '2022-12-10', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Oura Ring' },
       { name: 'Venum' },
@@ -340,6 +344,10 @@ const FIGHTERS = [
     img: ['#001040', '#002080'],
     accentHue: 220,
     stats: { age: 33, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Team Kaobon', born: 'Wigan, England' },
+    fightHistory: [
+      { result: 'W', opponent: 'Sergei Pavlovich', method: 'KO/TKO', event: 'UFC 295', round: 1, time: '1:09', date: '2023-11-11', org: 'UFC' },
+      { result: 'W', opponent: 'Marcin Tybura', method: 'Submission', event: 'UFC London', round: 1, time: '1:42', date: '2022-03-19', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Gymshark' },
       { name: 'MyProtein' },
@@ -363,6 +371,10 @@ const FIGHTERS = [
     img: ['#1A0008', '#3D0015'],
     accentHue: 350,
     stats: { age: 43, height: '185 cm', reach: '193 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW Akademia', born: 'Cieszyn, Polen' },
+    fightHistory: [
+      { result: 'W', opponent: 'Michal Oleksiejczuk', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-09-02', org: 'UFC' },
+      { result: 'NC', opponent: 'Magomed Ankalaev', method: 'Split Draw', event: 'UFC 282', round: 5, time: '5:00', date: '2022-12-10', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Subaru Poland' },
       { name: 'SuperBet' },
@@ -385,6 +397,10 @@ const FIGHTERS = [
     img: ['#00001A', '#00003D'],
     accentHue: 240,
     stats: { age: 30, height: '178 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Paris', born: 'Frankreich' },
+    fightHistory: [
+      { result: 'L', opponent: 'Islam Makhachev', method: 'Submission', event: 'UFC 310', round: 2, time: '2:41', date: '2024-12-07', org: 'UFC' },
+      { result: 'W', opponent: 'Ludovit Klein', method: 'KO/TKO', event: 'UFC Paris', round: 1, time: '0:14', date: '2023-09-02', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'Unkut' },
@@ -406,6 +422,10 @@ const FIGHTERS = [
     img: ['#0A001A', '#1A0040'],
     accentHue: 270,
     stats: { age: 30, height: '170 cm', reach: '177 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'Team Noël Le Gall', born: 'Paris, Frankreich' },
+    fightHistory: [
+      { result: 'W', opponent: 'Morgan Charrière', method: 'Unanimous Decision', event: 'KSW 91', round: 3, time: '5:00', date: '2024-10-19', org: 'KSW' },
+      { result: 'W', opponent: 'Théo Rubycz', method: 'KO/TKO', event: 'KSW 87', round: 1, time: '2:30', date: '2024-03-09', org: 'KSW' },
+    ],
     sponsors: [
       { name: 'Free Mobile' },
       { name: 'Venum' },
@@ -427,6 +447,10 @@ const FIGHTERS = [
     img: ['#200004', '#400008'],
     accentHue: 10,
     stats: { age: 34, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'Grappling Poznań', born: 'Gdańsk, Polen' },
+    fightHistory: [
+      { result: 'L', opponent: 'Arman Tsarukyan', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 5, time: '5:00', date: '2024-03-30', org: 'UFC' },
+      { result: 'W', opponent: 'Jalin Turner', method: 'KO/TKO', event: 'UFC 285', round: 1, time: '0:53', date: '2023-03-04', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Red Bull' },
       { name: 'New Balance Poland' },
@@ -448,6 +472,10 @@ const FIGHTERS = [
     img: ['#000A1A', '#001040'],
     accentHue: 200,
     stats: { age: 34, height: '165 cm', reach: '168 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Nice', born: 'Nizza, Frankreich' },
+    fightHistory: [
+      { result: 'W', opponent: 'Erin Blanchfield', method: 'Unanimous Decision', event: 'UFC 306', round: 5, time: '5:00', date: '2024-09-14', org: 'UFC' },
+      { result: 'W', opponent: 'Rose Namajunas', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 5, time: '5:00', date: '2023-09-09', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'PUMA' },
       { name: 'Venum' },
@@ -470,6 +498,10 @@ const FIGHTERS = [
     img: ['#001A08', '#003D15'],
     accentHue: 120,
     stats: { age: 32, height: '185 cm', reach: '192 cm', stance: 'Orthodox', nationality: 'Italienisch', gym: 'Kings MMA', born: 'Mezzocorona, Italien' },
+    fightHistory: [
+      { result: 'W', opponent: 'Roman Dolidze', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-06-17', org: 'UFC' },
+      { result: 'L', opponent: 'Paulo Costa', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2022-10-22', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Dolce & Gabbana' },
       { name: 'Venum' },
@@ -493,6 +525,10 @@ const FIGHTERS = [
     img: ['#001018', '#002030'],
     accentHue: 195,
     stats: { age: 34, height: '183 cm', reach: '188 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Team Renegade', born: 'Birmingham, England' },
+    fightHistory: [
+      { result: 'L', opponent: 'Belal Muhammad', method: 'Unanimous Decision', event: 'UFC 304', round: 5, time: '5:00', date: '2024-07-27', org: 'UFC' },
+      { result: 'W', opponent: 'Colby Covington', method: 'Unanimous Decision', event: 'UFC 296', round: 5, time: '5:00', date: '2023-12-16', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Moncler' },
       { name: 'Monster Energy' },
@@ -516,6 +552,10 @@ const FIGHTERS = [
     img: ['#1A0A00', '#3D1800'],
     accentHue: 30,
     stats: { age: 40, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Niederländisch-Armenisch', gym: "Mike's Gym", born: 'Isfahan, Iran' },
+    fightHistory: [
+      { result: 'L', opponent: 'Johnny Eblen', method: 'Submission', event: 'Bellator 282', round: 1, time: '4:51', date: '2022-06-24', org: 'Bellator' },
+      { result: 'W', opponent: 'Lyoto Machida', method: 'Unanimous Decision', event: 'Bellator 277', round: 3, time: '5:00', date: '2022-04-23', org: 'Bellator' },
+    ],
     sponsors: [
       { name: '32Red' },
       { name: 'Affliction' },
@@ -538,6 +578,10 @@ const FIGHTERS = [
     img: ['#001208', '#002810'],
     accentHue: 145,
     stats: { age: 34, height: '185 cm', reach: '190 cm', stance: 'Southpaw', nationality: 'Italienisch', gym: 'Minerva MMA Roma', born: 'Rom, Italien' },
+    fightHistory: [
+      { result: 'L', opponent: 'Michal Oleksiejczuk', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '1:34', date: '2024-02-24', org: 'UFC' },
+      { result: 'W', opponent: 'Abdul Razak Alhassan', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-05-13', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Leone 1947' },
       { name: 'EthicSport' }
@@ -559,6 +603,10 @@ const FIGHTERS = [
     img: ['#0A0020', '#1A0040'],
     accentHue: 260,
     stats: { age: 31, height: '178 cm', reach: '178 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Next Generation Liverpool', born: 'Liverpool, England' },
+    fightHistory: [
+      { result: 'W', opponent: 'Tony Ferguson', method: 'Submission', event: 'UFC 296', round: 2, time: '2:54', date: '2023-12-16', org: 'UFC' },
+      { result: 'W', opponent: 'Jared Gordon', method: 'Unanimous Decision', event: 'UFC 282', round: 3, time: '5:00', date: '2022-12-10', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Barstool Sports' },
       { name: 'Applied Nutrition' }
@@ -580,6 +628,10 @@ const FIGHTERS = [
     img: ['#1A0800', '#3D1500'],
     accentHue: 45,
     stats: { age: 36, height: '193 cm', reach: '196 cm', stance: 'Orthodox', nationality: 'Niederländisch', gym: 'Allstars Training Center', born: 'Breda, Niederlande' },
+    fightHistory: [
+      { result: 'W', opponent: 'Vitaly Bigdash', method: 'Unanimous Decision', event: 'ONE Fight Night 3', round: 3, time: '5:00', date: '2022-10-22', org: 'ONE' },
+      { result: 'W', opponent: 'Leandro Silva', method: 'Submission', event: 'ONE Championship', round: 1, time: '3:30', date: '2021-12-03', org: 'ONE' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -602,6 +654,10 @@ const FIGHTERS = [
     img: ['#1A0010', '#3D0020'],
     accentHue: 330,
     stats: { age: 31, height: '183 cm', reach: '185 cm', stance: 'Southpaw', nationality: 'Kroatisch', gym: 'UFD Gym Düsseldorf', born: 'Split, Kroatien' },
+    fightHistory: [
+      { result: 'W', opponent: 'Mateusz Legierski', method: 'KO/TKO', event: 'KSW 91', round: 1, time: '1:23', date: '2024-10-19', org: 'KSW' },
+      { result: 'L', opponent: 'Chidi Njokuani', method: 'KO/TKO', event: 'ONE Fight Night', round: 1, time: '2:14', date: '2023-09-29', org: 'ONE' },
+    ],
     sponsors: [
       { name: 'Olimp' },
       { name: 'SuperBet' },
@@ -624,6 +680,10 @@ const FIGHTERS = [
     img: ['#001A10', '#003D20'],
     accentHue: 160,
     stats: { age: 32, height: '183 cm', reach: '185 cm', stance: 'Orthodox', nationality: 'Schwedisch-Tschetschenisch', gym: 'Allstars Stockholm', born: 'Tschetschenien, Russland' },
+    fightHistory: [
+      { result: 'W', opponent: 'Robert Whittaker', method: 'Submission', event: 'UFC 308', round: 3, time: '4:02', date: '2024-10-26', org: 'UFC' },
+      { result: 'W', opponent: 'Kamaru Usman', method: 'KO/TKO', event: 'UFC 294', round: 2, time: '3:15', date: '2023-10-21', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Smilodox' },
       { name: 'Venum' }
@@ -645,6 +705,10 @@ const FIGHTERS = [
     img: ['#001020', '#002050'],
     accentHue: 230,
     stats: { age: 35, height: '196 cm', reach: '211 cm', stance: 'Orthodox', nationality: 'Französisch', gym: 'MMA Factory Paris', born: 'Frankreich' },
+    fightHistory: [
+      { result: 'W', opponent: 'Alexander Volkov', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 5, time: '5:00', date: '2024-06-08', org: 'UFC' },
+      { result: 'L', opponent: 'Jon Jones', method: 'Submission', event: 'UFC 285', round: 1, time: '2:04', date: '2023-03-04', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'Gymshark' },
@@ -668,6 +732,10 @@ const FIGHTERS = [
     img: ['#0A0A20', '#15153D'],
     accentHue: 215,
     stats: { age: 47, height: '185 cm', reach: '190 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Tristar Gym (ret.)', born: 'Manchester, England' },
+    fightHistory: [
+      { result: 'L', opponent: 'Kelvin Gastelum', method: 'KO/TKO', event: 'UFC Fight Night Shanghai', round: 1, time: '3:28', date: '2017-11-25', org: 'UFC' },
+      { result: 'L', opponent: 'Georges St-Pierre', method: 'Submission', event: 'UFC 217', round: 3, time: '4:27', date: '2017-11-04', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Manscaped' },
       { name: 'DraftKings' },
@@ -691,6 +759,10 @@ const FIGHTERS = [
     img: ['#200006', '#430010'],
     accentHue: 345,
     stats: { age: 38, height: '165 cm', reach: '168 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'Tiger Muay Thai', born: 'Białystok, Polen' },
+    fightHistory: [
+      { result: 'L', opponent: 'Zhang Weili', method: 'Unanimous Decision', event: 'UFC 275', round: 5, time: '5:00', date: '2022-06-11', org: 'UFC' },
+      { result: 'W', opponent: 'Nina Ansaroff', method: 'Unanimous Decision', event: 'UFC 261', round: 3, time: '5:00', date: '2021-04-24', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'PUMA Poland' },
       { name: 'Samsung Poland' },
@@ -714,6 +786,10 @@ const FIGHTERS = [
     img: ['#002010', '#004820'],
     accentHue: 140,
     stats: { age: 28, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Irisch', gym: 'SBG Ireland', born: 'Belfast, Irland' },
+    fightHistory: [
+      { result: 'W', opponent: 'Martín Bravo', method: 'KO/TKO', event: 'PFL Europe', round: 1, time: '2:34', date: '2024-03-29', org: 'PFL' },
+      { result: 'W', opponent: 'Mark Lemminger', method: 'Unanimous Decision', event: 'PFL Europe', round: 3, time: '5:00', date: '2023-10-20', org: 'PFL' },
+    ],
     sponsors: [
       { name: 'Monster Energy' },
       { name: 'Gym King' },
@@ -736,6 +812,10 @@ const FIGHTERS = [
     img: ['#001A1A', '#003D3D'],
     accentHue: 185,
     stats: { age: 39, height: '193 cm', reach: '196 cm', stance: 'Southpaw', nationality: 'Schwedisch', gym: 'Allstars Training Center', born: 'Arboga, Schweden' },
+    fightHistory: [
+      { result: 'L', opponent: 'Fabricio Werdum', method: 'Submission', event: 'UFC Fight Night', round: 1, time: '4:23', date: '2019-10-26', org: 'UFC' },
+      { result: 'L', opponent: 'Jon Jones', method: 'KO/TKO', event: 'UFC 232', round: 3, time: '3:01', date: '2018-12-29', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Unibet' },
       { name: 'MyProtein' },
@@ -758,6 +838,10 @@ const FIGHTERS = [
     img: ['#1A0A00', '#3A1800'],
     accentHue: 25,
     stats: { age: 32, height: '168 cm', reach: '178 cm', stance: 'Orthodox', nationality: 'Portugiesisch', gym: 'MMA Factory Lissabon', born: 'Angola' },
+    fightHistory: [
+      { result: 'W', opponent: 'David Dvorak', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '0:57', date: '2024-02-24', org: 'UFC' },
+      { result: 'L', opponent: 'Brandon Royval', method: 'Submission', event: 'UFC 290', round: 2, time: '3:45', date: '2023-07-08', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'Monster Energy' },
@@ -780,6 +864,10 @@ const FIGHTERS = [
     img: ['#1A0005', '#380010'],
     accentHue: 5,
     stats: { age: 41, height: '185 cm', reach: '190 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW Akademia', born: 'Stettin, Polen' },
+    fightHistory: [
+      { result: 'W', opponent: 'Łukasz Rajewski', method: 'KO/TKO', event: 'KSW 85', round: 1, time: '1:45', date: '2023-11-11', org: 'KSW' },
+      { result: 'L', opponent: 'Dricus du Plessis', method: 'KO/TKO', event: 'KSW 74', round: 2, time: '4:22', date: '2022-05-21', org: 'KSW' },
+    ],
     sponsors: [
       { name: 'Olimp Sport Nutrition' },
       { name: 'Pitbull West Coast' },
@@ -802,6 +890,10 @@ const FIGHTERS = [
     img: ['#001218', '#002530'],
     accentHue: 205,
     stats: { age: 29, height: '175 cm', reach: '180 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Capital City MMA Cardiff', born: 'Cardiff, Wales' },
+    fightHistory: [
+      { result: 'W', opponent: 'Jonathon Parsons', method: 'KO/TKO', event: 'PFL Europe', round: 2, time: '3:10', date: '2024-06-14', org: 'PFL' },
+      { result: 'L', opponent: 'Ottman Azaitar', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '0:55', date: '2022-07-23', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Dragon Energy' },
       { name: 'Venum' },
@@ -824,6 +916,10 @@ const FIGHTERS = [
     img: ['#1A0C00', '#3D1C00'],
     accentHue: 28,
     stats: { age: 45, height: '193 cm', reach: '203 cm', stance: 'Southpaw', nationality: 'Niederländisch', gym: "Mike's Gym (ret.)", born: 'Hounslow, England' },
+    fightHistory: [
+      { result: 'L', opponent: 'Jairzinho Rozenstruik', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '4:55', date: '2021-05-08', org: 'UFC' },
+      { result: 'W', opponent: 'Walt Harris', method: 'KO/TKO', event: 'UFC Fight Night', round: 5, time: '4:15', date: '2020-05-16', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'Venum' },
@@ -846,6 +942,10 @@ const FIGHTERS = [
     img: ['#080820', '#12123D'],
     accentHue: 245,
     stats: { age: 29, height: '170 cm', reach: '172 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'Tillery Combat', born: 'Aberdare, Wales' },
+    fightHistory: [
+      { result: 'W', opponent: 'Timur Valiev', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2024-07-27', org: 'UFC' },
+      { result: 'L', opponent: 'Nathaniel Wood', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-07-22', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Under Armour Wales' },
       { name: 'Monster Energy' },
@@ -868,6 +968,10 @@ const FIGHTERS = [
     img: ['#1A0008', '#380015'],
     accentHue: 355,
     stats: { age: 32, height: '175 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Dänisch', gym: 'Next Round Copenhagen', born: 'Kopenhagen, Dänemark' },
+    fightHistory: [
+      { result: 'W', opponent: 'Khurshed Kakhorov', method: 'Unanimous Decision', event: 'PFL Europe', round: 3, time: '5:00', date: '2024-04-13', org: 'PFL' },
+      { result: 'L', opponent: 'Brendan Loughnane', method: 'Unanimous Decision', event: 'PFL 2023', round: 3, time: '5:00', date: '2023-11-24', org: 'PFL' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein Denmark' },
@@ -890,6 +994,10 @@ const FIGHTERS = [
     img: ['#001820', '#003040'],
     accentHue: 195,
     stats: { age: 37, height: '178 cm', reach: '183 cm', stance: 'Orthodox', nationality: 'Isländisch', gym: 'SBG Ireland', born: 'Reykjavik, Island' },
+    fightHistory: [
+      { result: 'L', opponent: 'Rafael Fiziev', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2022-09-10', org: 'UFC' },
+      { result: 'W', opponent: 'Claudio Silva', method: 'Submission', event: 'UFC Fight Night', round: 3, time: '4:08', date: '2021-09-04', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Icelandic Glacial' },
       { name: 'Venum' },
@@ -912,6 +1020,10 @@ const FIGHTERS = [
     img: ['#0A1520', '#152D40'],
     accentHue: 210,
     stats: { age: 31, height: '170 cm', reach: '175 cm', stance: 'Orthodox', nationality: 'Britisch', gym: 'SBG Ipswich', born: 'Ipswich, England' },
+    fightHistory: [
+      { result: 'L', opponent: 'Giga Chikadze', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '2:09', date: '2024-02-24', org: 'UFC' },
+      { result: 'W', opponent: 'Dan Hooker', method: 'KO/TKO', event: 'UFC Fight Night', round: 1, time: '2:11', date: '2022-07-23', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Gymshark' },
       { name: 'MyProtein' },
@@ -934,6 +1046,10 @@ const FIGHTERS = [
     img: ['#001A0A', '#003A18'],
     accentHue: 145,
     stats: { age: 29, height: '168 cm', reach: '173 cm', stance: 'Orthodox', nationality: 'Irisch', gym: 'SBG Ireland', born: 'Belfast, Irland' },
+    fightHistory: [
+      { result: 'W', opponent: 'Ricardo Daniel Coria', method: 'Submission', event: 'UFC Fight Night', round: 2, time: '3:12', date: '2024-06-22', org: 'UFC' },
+      { result: 'W', opponent: 'Hamza Kooheji', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-07-22', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Venum' },
       { name: 'MyProtein' },
@@ -956,6 +1072,10 @@ const FIGHTERS = [
     img: ['#200008', '#400015'],
     accentHue: 350,
     stats: { age: 40, height: '165 cm', reach: '163 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'KSW / MMA Factory', born: 'Łódź, Polen' },
+    fightHistory: [
+      { result: 'L', opponent: 'Angela Hill', method: 'Split Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2022-07-30', org: 'UFC' },
+      { result: 'W', opponent: 'Michelle Waterson', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2021-11-06', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'Samsung Poland' },
@@ -977,6 +1097,10 @@ const FIGHTERS = [
     img: ['#1A0A0A', '#3A1515'],
     accentHue: 5,
     stats: { age: 39, height: '188 cm', reach: '193 cm', stance: 'Orthodox', nationality: 'Polnisch', gym: 'WCA Fight Team Warschau', born: 'Warschau, Polen' },
+    fightHistory: [
+      { result: 'L', opponent: 'Serghei Spivak', method: 'KO/TKO', event: 'UFC Fight Night', round: 2, time: '4:59', date: '2024-03-16', org: 'UFC' },
+      { result: 'W', opponent: 'Blagoy Ivanov', method: 'Unanimous Decision', event: 'UFC Fight Night', round: 3, time: '5:00', date: '2023-07-29', org: 'UFC' },
+    ],
     sponsors: [
       { name: 'Olimp Nutrition' },
       { name: 'SuperBet Poland' }
