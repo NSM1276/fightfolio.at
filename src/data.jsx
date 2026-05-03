@@ -300,6 +300,319 @@ const FIGHTERS = [
       { name: 'Power & Fitness Shop' }
     ],
   },
+  // ── SPANIEN ───────────────────────────────────────────────────────────────
+  {
+    id: 'ilia-topuria',
+    name: 'Ilia Topuria',
+    city: 'Alicante',
+    country: 'Spain',
+    status: 'verified',
+    styles: ['Striker', 'BJJ'],
+    tags: ['UFC', 'Champion', 'Featherweight', 'El Matador'],
+    weightClass: 'Featherweight',
+    record: '17-0-0',
+    rating: 5.0,
+    reviews: 0,
+    featured: true,
+    img: ['#2A0000', '#700000'],
+    accentHue: 0,
+    sponsors: [
+      { name: 'Oura Ring' },
+      { name: 'Venum' },
+      { name: 'Keiser' },
+      { name: 'Black Star Sports' }
+    ],
+  },
+  // ── GROSSBRITANNIEN ───────────────────────────────────────────────────────
+  {
+    id: 'tom-aspinall',
+    name: 'Tom Aspinall',
+    city: 'Liverpool',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Kickboxer', 'BJJ'],
+    tags: ['UFC', 'Interim Champion', 'Heavyweight', 'Team Kaobon'],
+    weightClass: 'Heavyweight',
+    record: '15-3-0',
+    rating: 4.9,
+    reviews: 0,
+    img: ['#001040', '#002080'],
+    accentHue: 220,
+    sponsors: [
+      { name: 'Gymshark' },
+      { name: 'MyProtein' },
+      { name: 'Vitality' },
+      { name: 'Venum' }
+    ],
+  },
+  // ── POLEN ─────────────────────────────────────────────────────────────────
+  {
+    id: 'jan-blachowicz',
+    name: 'Jan Błachowicz',
+    city: 'Warschau',
+    country: 'Poland',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Former Champion', 'LHW', 'Polish Power'],
+    weightClass: 'Light Heavyweight',
+    record: '29-11-2',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#1A0008', '#3D0015'],
+    accentHue: 350,
+    sponsors: [
+      { name: 'Subaru Poland' },
+      { name: 'SuperBet' },
+      { name: 'Olimp Sport Nutrition' }
+    ],
+  },
+  // ── FRANKREICH ────────────────────────────────────────────────────────────
+  {
+    id: 'benoit-saint-denis',
+    name: 'Benoît Saint-Denis',
+    city: 'Paris',
+    country: 'France',
+    status: 'verified',
+    styles: ['Wrestler', 'Striker'],
+    tags: ['UFC', 'Lightweight', 'God of War', 'Special Forces'],
+    weightClass: 'Lightweight',
+    record: '17-3-0',
+    rating: 4.6,
+    reviews: 0,
+    img: ['#00001A', '#00003D'],
+    accentHue: 240,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'Unkut' },
+      { name: 'Reebok France' }
+    ],
+  },
+  {
+    id: 'salahdine-parnasse',
+    name: 'Salahdine Parnasse',
+    city: 'Paris',
+    country: 'France',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['KSW', 'Multi-Champion', 'Featherweight', 'Mbappé des MMA'],
+    weightClass: 'Featherweight',
+    record: '21-2-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#0A001A', '#1A0040'],
+    accentHue: 270,
+    sponsors: [
+      { name: 'Free Mobile' },
+      { name: 'Venum' },
+      { name: 'KSW' }
+    ],
+  },
+  {
+    id: 'mateusz-gamrot',
+    name: 'Mateusz Gamrot',
+    city: 'Poznań',
+    country: 'Poland',
+    status: 'verified',
+    styles: ['Wrestler', 'MMA'],
+    tags: ['UFC', 'Top-5', 'Lightweight', 'Gamer'],
+    weightClass: 'Lightweight',
+    record: '26-4-0',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#200004', '#400008'],
+    accentHue: 10,
+    sponsors: [
+      { name: 'Red Bull' },
+      { name: 'New Balance Poland' },
+      { name: 'Olimp Nutrition' }
+    ],
+  },
+  {
+    id: 'manon-fiorot',
+    name: 'Manon Fiorot',
+    city: 'Nizza',
+    country: 'France',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Top-3', 'Flyweight', 'The Beast'],
+    weightClass: 'Flyweight',
+    record: '13-2-0',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#000A1A', '#001040'],
+    accentHue: 200,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'Nice MMA' },
+      { name: 'PUMA France' }
+    ],
+  },
+  // ── ITALIEN ───────────────────────────────────────────────────────────────
+  {
+    id: 'marvin-vettori',
+    name: 'Marvin Vettori',
+    city: 'Rom',
+    country: 'Italy',
+    status: 'verified',
+    styles: ['Wrestler', 'Striker'],
+    tags: ['UFC', 'Middleweight', 'Italian Dream', 'Contender'],
+    weightClass: 'Middleweight',
+    record: '19-10-1',
+    rating: 4.5,
+    reviews: 0,
+    img: ['#001A08', '#003D15'],
+    accentHue: 120,
+    sponsors: [
+      { name: 'Dolce & Gabbana' },
+      { name: 'Venum' },
+      { name: 'Everlast Italy' }
+    ],
+  },
+  // ── GROSSBRITANNIEN ───────────────────────────────────────────────────────
+  {
+    id: 'leon-edwards',
+    name: 'Leon Edwards',
+    city: 'Birmingham',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Former Champion', 'Welterweight', 'Rocky'],
+    weightClass: 'Welterweight',
+    record: '22-6-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#001018', '#002030'],
+    accentHue: 195,
+    sponsors: [
+      { name: 'Moncler' },
+      { name: 'Monster Energy' },
+      { name: 'Venum' },
+      { name: 'Wow Hydrate' }
+    ],
+  },
+  // ── NIEDERLANDE ───────────────────────────────────────────────────────────
+  {
+    id: 'gegard-mousasi',
+    name: 'Gegard Mousasi',
+    city: 'Leiden',
+    country: 'Netherlands',
+    status: 'verified',
+    styles: ['Striker', 'BJJ'],
+    tags: ['Bellator', 'UFC', 'PFL', 'Legend', 'Middleweight'],
+    weightClass: 'Middleweight',
+    record: '49-9-2',
+    rating: 4.9,
+    reviews: 0,
+    img: ['#1A0A00', '#3D1800'],
+    accentHue: 30,
+    sponsors: [
+      { name: '32Red' },
+      { name: 'Affliction' },
+      { name: 'Venum' }
+    ],
+  },
+  // ── ITALIEN ───────────────────────────────────────────────────────────────
+  {
+    id: 'alessio-di-chirico',
+    name: 'Alessio Di Chirico',
+    city: 'Rom',
+    country: 'Italy',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Veteran', 'Middleweight', 'Italy'],
+    weightClass: 'Middleweight',
+    record: '13-7-0',
+    rating: 4.2,
+    reviews: 0,
+    img: ['#001208', '#002810'],
+    accentHue: 145,
+    sponsors: [
+      { name: 'Leone 1947' },
+      { name: 'EthicSport' }
+    ],
+  },
+  // ── GROSSBRITANNIEN ───────────────────────────────────────────────────────
+  {
+    id: 'paddy-pimblett',
+    name: 'Paddy Pimblett',
+    city: 'Liverpool',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['BJJ', 'Striker'],
+    tags: ['UFC', 'Lightweight', 'The Baddy', 'Liverpool'],
+    weightClass: 'Lightweight',
+    record: '21-3-0',
+    rating: 4.6,
+    reviews: 0,
+    img: ['#0A0020', '#1A0040'],
+    accentHue: 260,
+    sponsors: [
+      { name: 'Barstool Sports' },
+      { name: 'Applied Nutrition' }
+    ],
+  },
+  // ── NIEDERLANDE ───────────────────────────────────────────────────────────
+  {
+    id: 'reinier-de-ridder',
+    name: 'Reinier de Ridder',
+    city: 'Breda',
+    country: 'Netherlands',
+    status: 'verified',
+    styles: ['Grappler', 'BJJ'],
+    tags: ['ONE FC', 'UFC', 'Middleweight', 'Dutch Knight'],
+    weightClass: 'Middleweight',
+    record: '17-2-0',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#1A0800', '#3D1500'],
+    accentHue: 45,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'MyProtein' },
+      { name: 'Dutch Combat Brands' }
+    ],
+  },
+  // ── KROATIEN ──────────────────────────────────────────────────────────────
+  {
+    id: 'roberto-soldic',
+    name: 'Roberto Soldić',
+    city: 'Düsseldorf',
+    country: 'Croatia',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['ONE', 'KSW', 'Welterweight', 'Robocop', 'KO-Artist'],
+    weightClass: 'Welterweight',
+    record: '20-4-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#1A0010', '#3D0020'],
+    accentHue: 330,
+    sponsors: [
+      { name: 'Olimp' },
+      { name: 'SuperBet' },
+      { name: 'Paffensport' }
+    ],
+  },
+  // ── SCHWEDEN ──────────────────────────────────────────────────────────────
+  {
+    id: 'khamzat-chimaev',
+    name: 'Khamzat Chimaev',
+    city: 'Stockholm',
+    country: 'Sweden',
+    status: 'verified',
+    styles: ['Wrestler', 'Striker'],
+    tags: ['UFC', 'Middleweight', 'Borz', 'Top-5', 'Undefeated'],
+    weightClass: 'Middleweight',
+    record: '14-0-0',
+    rating: 4.9,
+    reviews: 0,
+    img: ['#001A10', '#003D20'],
+    accentHue: 160,
+    sponsors: [
+      { name: 'Smilodox' },
+      { name: 'Venum' }
+    ],
+  },
 ];
 
 const COPY = {
@@ -397,25 +710,51 @@ const FIGHT_STYLES = ['Striker', 'Kickboxer', 'Wrestler', 'BJJ', 'Grappler', 'MM
 
 const CITIES = [
   // Austria
-  { id: 'Wien', label: 'Wien 🇦🇹', country: 'Austria' },
-  { id: 'Graz', label: 'Graz 🇦🇹', country: 'Austria' },
-  { id: 'Salzburg', label: 'Salzburg 🇦🇹', country: 'Austria' },
-  { id: 'Innsbruck', label: 'Innsbruck 🇦🇹', country: 'Austria' },
-  { id: 'Linz', label: 'Linz 🇦🇹', country: 'Austria' },
+  { id: 'Wien',       label: 'Wien 🇦🇹',       country: 'Austria' },
+  { id: 'Graz',       label: 'Graz 🇦🇹',       country: 'Austria' },
+  { id: 'Salzburg',   label: 'Salzburg 🇦🇹',   country: 'Austria' },
+  { id: 'Innsbruck',  label: 'Innsbruck 🇦🇹',  country: 'Austria' },
+  { id: 'Linz',       label: 'Linz 🇦🇹',       country: 'Austria' },
   // Germany
-  { id: 'Frankfurt', label: 'Frankfurt 🇩🇪', country: 'Germany' },
-  { id: 'München', label: 'München 🇩🇪', country: 'Germany' },
-  { id: 'Hamburg', label: 'Hamburg 🇩🇪', country: 'Germany' },
+  { id: 'Frankfurt',  label: 'Frankfurt 🇩🇪',  country: 'Germany' },
+  { id: 'München',    label: 'München 🇩🇪',    country: 'Germany' },
+  { id: 'Hamburg',    label: 'Hamburg 🇩🇪',    country: 'Germany' },
   { id: 'Düsseldorf', label: 'Düsseldorf 🇩🇪', country: 'Germany' },
-  { id: 'Köln', label: 'Köln 🇩🇪', country: 'Germany' },
-  { id: 'Leipzig', label: 'Leipzig 🇩🇪', country: 'Germany' },
-  { id: 'Stuttgart', label: 'Stuttgart 🇩🇪', country: 'Germany' },
-  { id: 'Berlin', label: 'Berlin 🇩🇪', country: 'Germany' },
+  { id: 'Köln',       label: 'Köln 🇩🇪',       country: 'Germany' },
+  { id: 'Leipzig',    label: 'Leipzig 🇩🇪',    country: 'Germany' },
+  { id: 'Stuttgart',  label: 'Stuttgart 🇩🇪',  country: 'Germany' },
+  { id: 'Berlin',     label: 'Berlin 🇩🇪',     country: 'Germany' },
+  // Spain
+  { id: 'Alicante',   label: 'Alicante 🇪🇸',   country: 'Spain' },
+  // United Kingdom
+  { id: 'Liverpool',  label: 'Liverpool 🇬🇧',  country: 'United Kingdom' },
+  { id: 'Birmingham', label: 'Birmingham 🇬🇧', country: 'United Kingdom' },
+  // France
+  { id: 'Paris',      label: 'Paris 🇫🇷',      country: 'France' },
+  { id: 'Nizza',      label: 'Nizza 🇫🇷',      country: 'France' },
+  // Poland
+  { id: 'Warschau',   label: 'Warschau 🇵🇱',   country: 'Poland' },
+  { id: 'Poznań',     label: 'Poznań 🇵🇱',     country: 'Poland' },
+  // Italy
+  { id: 'Rom',        label: 'Rom 🇮🇹',        country: 'Italy' },
+  // Netherlands
+  { id: 'Leiden',     label: 'Leiden 🇳🇱',     country: 'Netherlands' },
+  { id: 'Breda',      label: 'Breda 🇳🇱',      country: 'Netherlands' },
+  // Sweden
+  { id: 'Stockholm',  label: 'Stockholm 🇸🇪',  country: 'Sweden' },
 ];
 
 const COUNTRIES = [
-  { id: 'Austria', label: '🇦🇹 Austria' },
-  { id: 'Germany', label: '🇩🇪 Germany' },
+  { id: 'Austria',        label: '🇦🇹 Austria' },
+  { id: 'Germany',        label: '🇩🇪 Germany' },
+  { id: 'Spain',          label: '🇪🇸 Spain' },
+  { id: 'United Kingdom', label: '🇬🇧 United Kingdom' },
+  { id: 'France',         label: '🇫🇷 France' },
+  { id: 'Poland',         label: '🇵🇱 Poland' },
+  { id: 'Italy',          label: '🇮🇹 Italy' },
+  { id: 'Netherlands',    label: '🇳🇱 Netherlands' },
+  { id: 'Croatia',        label: '🇭🇷 Croatia' },
+  { id: 'Sweden',         label: '🇸🇪 Sweden' },
 ];
 
 Object.assign(window, { FIGHTERS, COPY, FIGHT_STYLES, CITIES, COUNTRIES });

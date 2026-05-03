@@ -1,3 +1,21 @@
+// Country flag + color map
+const COUNTRY_META = {
+  'Austria':        { flag: '🇦🇹', color: '#EF4444' },
+  'Germany':        { flag: '🇩🇪', color: '#3B82F6' },
+  'Spain':          { flag: '🇪🇸', color: '#F59E0B' },
+  'United Kingdom': { flag: '🇬🇧', color: '#6366F1' },
+  'France':         { flag: '🇫🇷', color: '#3B82F6' },
+  'Poland':         { flag: '🇵🇱', color: '#EF4444' },
+  'Italy':          { flag: '🇮🇹', color: '#22C55E' },
+  'Netherlands':    { flag: '🇳🇱', color: '#F97316' },
+  'Croatia':        { flag: '🇭🇷', color: '#EF4444' },
+  'Sweden':         { flag: '🇸🇪', color: '#3B82F6' },
+  'Czechia':        { flag: '🇨🇿', color: '#EF4444' },
+  'Belgium':        { flag: '🇧🇪', color: '#F59E0B' },
+  'Switzerland':    { flag: '🇨🇭', color: '#EF4444' },
+  'Portugal':       { flag: '🇵🇹', color: '#22C55E' },
+};
+
 // Fighter card — bento grid member. Supports 3 sizes (1x1, 2x1, 2x2)
 const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) => {
   const c = window.COPY[lang];
@@ -143,8 +161,8 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
             {r.city}
           </span>
           <span style={{ color: 'var(--text-tertiary)' }}>·</span>
-          <span style={{ color: r.country === 'Austria' ? '#EF4444' : '#3B82F6', fontWeight: 600, fontSize: 12 }}>
-            {r.country === 'Austria' ? '🇦🇹' : '🇩🇪'} {r.country}
+          <span style={{ color: (COUNTRY_META[r.country] || {}).color || 'var(--text-secondary)', fontWeight: 600, fontSize: 12 }}>
+            {(COUNTRY_META[r.country] || {}).flag || '🌍'} {r.country}
           </span>
           <span style={{ color: 'var(--text-tertiary)' }}>·</span>
           <span>{r.styles ? r.styles.join(', ') : ''}</span>

@@ -191,10 +191,10 @@ function App() {
         }}>
           {[
             { icon: '🥊', label: lang === 'de' ? 'Kämpfer gesamt' : 'Total fighters', value: window.FIGHTERS.length },
-            { icon: '🇦🇹', label: 'Österreich', value: window.FIGHTERS.filter(f => f.country === 'Austria').length },
-            { icon: '🇩🇪', label: 'Deutschland',  value: window.FIGHTERS.filter(f => f.country === 'Germany').length },
+            { icon: '🌍', label: lang === 'de' ? 'Länder' : 'Countries', value: [...new Set(window.FIGHTERS.map(f => f.country))].length },
             { icon: '🏆', label: lang === 'de' ? 'Profis' : 'Pros', value: window.FIGHTERS.filter(f => f.status === 'verified').length },
             { icon: '⚖️', label: lang === 'de' ? 'Gewichtsklassen' : 'Weight classes', value: [...new Set(window.FIGHTERS.map(f => f.weightClass))].length },
+            { icon: '🎖️', label: lang === 'de' ? 'Organisationen' : 'Organisations', value: [...new Set(window.FIGHTERS.flatMap(f => f.tags.filter(t => ['UFC','Bellator','ONE FC','KSW','OKTAGON','PFL','GLORY'].includes(t))))].length },
           ].map(({ icon, label, value }) => (
             <div key={label} style={{ textAlign: 'center', padding: '8px 0' }}>
               <div style={{ fontSize: 24, marginBottom: 4 }}>{icon}</div>
