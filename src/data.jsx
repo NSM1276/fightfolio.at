@@ -434,17 +434,17 @@ const FIGHTERS = [
     country: 'France',
     status: 'verified',
     styles: ['Striker', 'MMA'],
-    tags: ['UFC', 'Top-3', 'Flyweight', 'The Beast'],
+    tags: ['UFC', '#1 Contender', 'Flyweight', 'The Beast'],
     weightClass: 'Flyweight',
-    record: '13-2-0',
-    rating: 4.7,
+    record: '12-1-0',
+    rating: 4.8,
     reviews: 0,
     img: ['#000A1A', '#001040'],
     accentHue: 200,
     sponsors: [
+      { name: 'PUMA' },
       { name: 'Venum' },
-      { name: 'Nice MMA' },
-      { name: 'PUMA France' }
+      { name: 'Nice MMA Shop' }
     ],
   },
   // ── ITALIEN ───────────────────────────────────────────────────────────────
@@ -455,9 +455,9 @@ const FIGHTERS = [
     country: 'Italy',
     status: 'verified',
     styles: ['Wrestler', 'Striker'],
-    tags: ['UFC', 'Middleweight', 'Italian Dream', 'Contender'],
+    tags: ['UFC', 'Middleweight', 'Italian Dream', 'Kings MMA'],
     weightClass: 'Middleweight',
-    record: '19-10-1',
+    record: '19-7-1',
     rating: 4.5,
     reviews: 0,
     img: ['#001A08', '#003D15'],
@@ -465,7 +465,8 @@ const FIGHTERS = [
     sponsors: [
       { name: 'Dolce & Gabbana' },
       { name: 'Venum' },
-      { name: 'Everlast Italy' }
+      { name: 'Everlast' },
+      { name: 'Leone 1947' }
     ],
   },
   // ── GROSSBRITANNIEN ───────────────────────────────────────────────────────
@@ -613,6 +614,282 @@ const FIGHTERS = [
       { name: 'Venum' }
     ],
   },
+  // ── FRANKREICH (Batch 3) ──────────────────────────────────────────────────
+  {
+    id: 'ciryl-gane',
+    name: 'Ciryl Gane',
+    city: 'Paris',
+    country: 'France',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['UFC', 'Contender', 'Heavyweight', 'MMA Factory'],
+    weightClass: 'Heavyweight',
+    record: '13-2-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#001020', '#002050'],
+    accentHue: 230,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'Gymshark' },
+      { name: 'Major' },
+      { name: 'Crypto.com' }
+    ],
+  },
+  // ── GROSSBRITANNIEN (Batch 3) ─────────────────────────────────────────────
+  {
+    id: 'michael-bisping',
+    name: 'Michael Bisping',
+    city: 'Manchester',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Hall of Fame', 'Former Champion', 'The Count'],
+    weightClass: 'Middleweight',
+    record: '30-9-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#0A0A20', '#15153D'],
+    accentHue: 215,
+    sponsors: [
+      { name: 'Manscaped' },
+      { name: 'DraftKings' },
+      { name: 'Sledgehammer Whiskey' },
+      { name: 'MyProtein' }
+    ],
+  },
+  // ── POLEN (Batch 3) ───────────────────────────────────────────────────────
+  {
+    id: 'joanna-jedrzejczyk',
+    name: 'Joanna Jędrzejczyk',
+    city: 'Warschau',
+    country: 'Poland',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['UFC', 'Former Champion', 'Strawweight', 'Muay Thai'],
+    weightClass: 'Strawweight',
+    record: '16-5-0',
+    rating: 4.9,
+    reviews: 0,
+    img: ['#200006', '#430010'],
+    accentHue: 345,
+    sponsors: [
+      { name: 'PUMA Poland' },
+      { name: 'Samsung Poland' },
+      { name: 'Dietly' },
+      { name: 'MyProtein' }
+    ],
+  },
+  // ── IRLAND ────────────────────────────────────────────────────────────────
+  {
+    id: 'paul-hughes',
+    name: 'Paul Hughes',
+    city: 'Belfast',
+    country: 'Ireland',
+    status: 'verified',
+    styles: ['Striker', 'Wrestler'],
+    tags: ['PFL', 'Bellator', 'Lightweight', 'Belfast'],
+    weightClass: 'Lightweight',
+    record: '14-1-0',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#002010', '#004820'],
+    accentHue: 140,
+    sponsors: [
+      { name: 'Monster Energy' },
+      { name: 'Gym King' },
+      { name: 'Empire Fighting Chance' }
+    ],
+  },
+  // ── SCHWEDEN (Batch 3) ────────────────────────────────────────────────────
+  {
+    id: 'alexander-gustafsson',
+    name: 'Alexander Gustafsson',
+    city: 'Stockholm',
+    country: 'Sweden',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Legend', 'LHW', 'The Mauler'],
+    weightClass: 'Light Heavyweight',
+    record: '18-8-0',
+    rating: 4.8,
+    reviews: 0,
+    img: ['#001A1A', '#003D3D'],
+    accentHue: 185,
+    sponsors: [
+      { name: 'Unibet' },
+      { name: 'MyProtein' },
+      { name: 'Bad Boy' }
+    ],
+  },
+  // ── PORTUGAL ──────────────────────────────────────────────────────────────
+  {
+    id: 'manel-kape',
+    name: 'Manel Kape',
+    city: 'Lissabon',
+    country: 'Portugal',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['UFC', 'Flyweight', 'Starboy', 'Rizin'],
+    weightClass: 'Flyweight',
+    record: '19-7-0',
+    rating: 4.5,
+    reviews: 0,
+    img: ['#1A0A00', '#3A1800'],
+    accentHue: 25,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'Monster Energy' },
+      { name: 'Prio Energy' }
+    ],
+  },
+  // ── POLEN (Batch 3) ───────────────────────────────────────────────────────
+  {
+    id: 'michal-materla',
+    name: 'Michał Materla',
+    city: 'Stettin',
+    country: 'Poland',
+    status: 'verified',
+    styles: ['Wrestler', 'MMA'],
+    tags: ['KSW', 'Legend', 'Middleweight', 'Berserker'],
+    weightClass: 'Middleweight',
+    record: '33-11-0',
+    rating: 4.6,
+    reviews: 0,
+    img: ['#1A0005', '#380010'],
+    accentHue: 5,
+    sponsors: [
+      { name: 'Olimp Sport Nutrition' },
+      { name: 'Pitbull West Coast' },
+      { name: 'Stoprocent' }
+    ],
+  },
+  // ── GROSSBRITANNIEN (Wales) ───────────────────────────────────────────────
+  {
+    id: 'mason-jones',
+    name: 'Mason Jones',
+    city: 'Cardiff',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Striker', 'Wrestler'],
+    tags: ['UFC', 'Cage Warriors', 'Lightweight', 'The Dragon'],
+    weightClass: 'Lightweight',
+    record: '14-2-0',
+    rating: 4.4,
+    reviews: 0,
+    img: ['#001218', '#002530'],
+    accentHue: 205,
+    sponsors: [
+      { name: 'Dragon Energy' },
+      { name: 'Venum' },
+      { name: 'Scramble' }
+    ],
+  },
+  // ── NIEDERLANDE (Batch 3) ─────────────────────────────────────────────────
+  {
+    id: 'alistair-overeem',
+    name: 'Alistair Overeem',
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    status: 'verified',
+    styles: ['Striker', 'Kickboxer'],
+    tags: ['UFC', 'K-1', 'Legend', 'Heavyweight', 'The Reem'],
+    weightClass: 'Heavyweight',
+    record: '47-19-0',
+    rating: 4.9,
+    reviews: 0,
+    img: ['#1A0C00', '#3D1C00'],
+    accentHue: 28,
+    sponsors: [
+      { name: 'Olimp Nutrition' },
+      { name: 'Venum' },
+      { name: '32Red' }
+    ],
+  },
+  // ── GROSSBRITANNIEN (Wales) ───────────────────────────────────────────────
+  {
+    id: 'jack-shore',
+    name: 'Jack Shore',
+    city: 'Cardiff',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Grappler', 'BJJ'],
+    tags: ['UFC', 'Featherweight', 'Tank', 'Wales'],
+    weightClass: 'Featherweight',
+    record: '17-2-0',
+    rating: 4.5,
+    reviews: 0,
+    img: ['#080820', '#12123D'],
+    accentHue: 245,
+    sponsors: [
+      { name: 'Under Armour Wales' },
+      { name: 'Monster Energy' },
+      { name: 'Venum' }
+    ],
+  },
+  // ── DÄNEMARK ──────────────────────────────────────────────────────────────
+  {
+    id: 'mads-burnell',
+    name: 'Mads Burnell',
+    city: 'Kopenhagen',
+    country: 'Denmark',
+    status: 'verified',
+    styles: ['BJJ', 'Striker'],
+    tags: ['PFL', 'Bellator', 'Featherweight', 'Arte Suave'],
+    weightClass: 'Featherweight',
+    record: '19-6-0',
+    rating: 4.5,
+    reviews: 0,
+    img: ['#1A0008', '#380015'],
+    accentHue: 355,
+    sponsors: [
+      { name: 'Venum' },
+      { name: 'MyProtein Denmark' },
+      { name: 'Reebok Nordic' }
+    ],
+  },
+  // ── ISLAND ────────────────────────────────────────────────────────────────
+  {
+    id: 'gunnar-nelson',
+    name: 'Gunnar Nelson',
+    city: 'Reykjavik',
+    country: 'Iceland',
+    status: 'verified',
+    styles: ['Grappler', 'BJJ'],
+    tags: ['UFC', 'Welterweight', 'Gunni', 'Iceland'],
+    weightClass: 'Welterweight',
+    record: '19-5-1',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#001820', '#003040'],
+    accentHue: 195,
+    sponsors: [
+      { name: 'Icelandic Glacial' },
+      { name: 'Venum' },
+      { name: 'Reebok Iceland' }
+    ],
+  },
+  // ── GROSSBRITANNIEN (Batch 3) ─────────────────────────────────────────────
+  {
+    id: 'arnold-allen',
+    name: 'Arnold Allen',
+    city: 'Ipswich',
+    country: 'United Kingdom',
+    status: 'verified',
+    styles: ['Striker', 'MMA'],
+    tags: ['UFC', 'Top-5', 'Featherweight', 'Almighty'],
+    weightClass: 'Featherweight',
+    record: '20-3-0',
+    rating: 4.7,
+    reviews: 0,
+    img: ['#0A1520', '#152D40'],
+    accentHue: 210,
+    sponsors: [
+      { name: 'Gymshark' },
+      { name: 'MyProtein' },
+      { name: 'Venum' }
+    ],
+  },
 ];
 
 const COPY = {
@@ -742,6 +1019,22 @@ const CITIES = [
   { id: 'Breda',      label: 'Breda 🇳🇱',      country: 'Netherlands' },
   // Sweden
   { id: 'Stockholm',  label: 'Stockholm 🇸🇪',  country: 'Sweden' },
+  // United Kingdom (Batch 3)
+  { id: 'Manchester', label: 'Manchester 🇬🇧', country: 'United Kingdom' },
+  { id: 'Cardiff',    label: 'Cardiff 🇬🇧',    country: 'United Kingdom' },
+  { id: 'Ipswich',    label: 'Ipswich 🇬🇧',    country: 'United Kingdom' },
+  // Ireland
+  { id: 'Belfast',    label: 'Belfast 🇮🇪',    country: 'Ireland' },
+  // Portugal
+  { id: 'Lissabon',   label: 'Lissabon 🇵🇹',   country: 'Portugal' },
+  // Poland (Batch 3)
+  { id: 'Stettin',    label: 'Stettin 🇵🇱',    country: 'Poland' },
+  // Netherlands (Batch 3)
+  { id: 'Amsterdam',  label: 'Amsterdam 🇳🇱',  country: 'Netherlands' },
+  // Denmark
+  { id: 'Kopenhagen', label: 'Kopenhagen 🇩🇰', country: 'Denmark' },
+  // Iceland
+  { id: 'Reykjavik',  label: 'Reykjavik 🇮🇸',  country: 'Iceland' },
 ];
 
 const COUNTRIES = [
@@ -755,6 +1048,10 @@ const COUNTRIES = [
   { id: 'Netherlands',    label: '🇳🇱 Netherlands' },
   { id: 'Croatia',        label: '🇭🇷 Croatia' },
   { id: 'Sweden',         label: '🇸🇪 Sweden' },
+  { id: 'Ireland',        label: '🇮🇪 Ireland' },
+  { id: 'Portugal',       label: '🇵🇹 Portugal' },
+  { id: 'Denmark',        label: '🇩🇰 Denmark' },
+  { id: 'Iceland',        label: '🇮🇸 Iceland' },
 ];
 
 Object.assign(window, { FIGHTERS, COPY, FIGHT_STYLES, CITIES, COUNTRIES });

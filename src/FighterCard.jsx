@@ -14,6 +14,15 @@ const COUNTRY_META = {
   'Belgium':        { flag: '🇧🇪', color: '#F59E0B' },
   'Switzerland':    { flag: '🇨🇭', color: '#EF4444' },
   'Portugal':       { flag: '🇵🇹', color: '#22C55E' },
+  'Ireland':        { flag: '🇮🇪', color: '#22C55E' },
+  'Denmark':        { flag: '🇩🇰', color: '#EF4444' },
+  'Iceland':        { flag: '🇮🇸', color: '#3B82F6' },
+  'Norway':         { flag: '🇳🇴', color: '#EF4444' },
+  'Finland':        { flag: '🇫🇮', color: '#3B82F6' },
+  'Hungary':        { flag: '🇭🇺', color: '#EF4444' },
+  'Romania':        { flag: '🇷🇴', color: '#3B82F6' },
+  'Serbia':         { flag: '🇷🇸', color: '#EF4444' },
+  'Georgia':        { flag: '🇬🇪', color: '#EF4444' },
 };
 
 // Fighter card — bento grid member. Supports 3 sizes (1x1, 2x1, 2x2)
