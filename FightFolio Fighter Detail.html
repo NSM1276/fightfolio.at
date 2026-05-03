@@ -206,6 +206,28 @@ function Detail() {
                 }}>{t}</span>
               ))}
             </div>
+
+            {/* Sponsors */}
+            {(v.sponsors && v.sponsors.length > 0) && (
+              <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center', paddingTop: 12, borderTop: '1px solid var(--border)' }}>
+                <span style={{ fontSize: 11, color: 'var(--text-tertiary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  🤝 {lang === 'de' ? 'Sponsoren' : 'Sponsors'}:
+                </span>
+                {v.sponsors.map((sponsor, idx) => (
+                  <span key={idx} style={{
+                    display: 'inline-block',
+                    padding: '5px 12px',
+                    background: 'rgba(237, 104, 31, 0.1)',
+                    border: '1px solid rgba(237, 104, 31, 0.25)',
+                    borderRadius: 6,
+                    fontSize: 12,
+                    color: 'var(--accent)',
+                    fontWeight: 600,
+                    whiteSpace: 'nowrap',
+                  }}>{sponsor.name}</span>
+                ))}
+              </div>
+            )}
           </div>
 
           <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
