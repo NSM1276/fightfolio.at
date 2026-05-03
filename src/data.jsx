@@ -17,6 +17,11 @@ const FIGHTERS = [
     featured: true,
     img: ['#1A0A00', '#3D1F00'],
     accentHue: 42,
+    sponsors: [
+      { name: 'ESN.com' },
+      { name: 'Betify' },
+      { name: 'Phantom Athletics' }
+    ],
   },
   {
     id: 'ismail-naurdiev',
@@ -32,6 +37,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A3D', '#003580'],
     accentHue: 210,
+    sponsors: [],
   },
   {
     id: 'bogdan-grad',
@@ -47,6 +53,9 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A1A00', '#1A3D00'],
     accentHue: 105,
+    sponsors: [
+      { name: 'TopTen' }
+    ],
   },
   {
     id: 'rodrigo-nascimento',
@@ -62,6 +71,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A001A', '#3D003D'],
     accentHue: 300,
+    sponsors: [],
   },
   {
     id: 'florian-aberger',
@@ -77,6 +87,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A00', '#003D00'],
     accentHue: 90,
+    sponsors: [],
   },
   {
     id: 'wilhelm-ott',
@@ -92,6 +103,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#1A1A3D'],
     accentHue: 220,
+    sponsors: [],
   },
   // ── DEUTSCHLAND ───────────────────────────────────────────────────────────
   {
@@ -108,6 +120,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0000', '#3D0000'],
     accentHue: 0,
+    sponsors: [],
   },
   {
     id: 'kerim-engizek',
@@ -123,6 +136,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A1A', '#003D3D'],
     accentHue: 180,
+    sponsors: [],
   },
   {
     id: 'nick-hein',
@@ -138,6 +152,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#15153D'],
     accentHue: 240,
+    sponsors: [],
   },
   {
     id: 'dennis-siver',
@@ -153,6 +168,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A1A', '#3D1A3D'],
     accentHue: 280,
+    sponsors: [],
   },
   {
     id: 'daniel-weichel',
@@ -168,6 +184,12 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0A00', '#3D1800'],
     accentHue: 15,
+    sponsors: [
+      { name: 'Olimp Sport Nutrition' },
+      { name: 'Allianz Vollbrecht' },
+      { name: 'Fightnature' },
+      { name: 'Olimp Labs' }
+    ],
   },
   {
     id: 'joilton-lutterbach',
@@ -183,6 +205,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A18', '#003D33'],
     accentHue: 170,
+    sponsors: [],
   },
   {
     id: 'frederic-vosgrone',
@@ -198,6 +221,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0D001A', '#20003D'],
     accentHue: 270,
+    sponsors: [],
   },
   {
     id: 'sascha-sharma',
@@ -213,6 +237,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A1200', '#3D2A00'],
     accentHue: 35,
+    sponsors: [],
   },
   {
     id: 'sebastian-holzmann',
@@ -228,6 +253,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001218', '#002030'],
     accentHue: 200,
+    sponsors: [],
   },
 ];
 
