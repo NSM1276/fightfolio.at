@@ -165,6 +165,33 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
           ))}
         </div>
 
+        {/* Sponsors */}
+        {(r.sponsors || []).length > 0 && (
+          <div style={{
+            marginTop: 10,
+            paddingTop: 10,
+            borderTop: '1px solid var(--border)',
+            display: 'flex', flexWrap: 'wrap', gap: 8, alignItems: 'center',
+          }}>
+            <span style={{ fontSize: 10, color: 'var(--text-tertiary)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+              🤝 Sponsors:
+            </span>
+            {r.sponsors.map((sponsor, idx) => (
+              <span key={idx} style={{
+                display: 'inline-block',
+                padding: '4px 10px',
+                background: 'rgba(237, 104, 31, 0.08)',
+                border: '1px solid rgba(237, 104, 31, 0.2)',
+                borderRadius: 6,
+                fontSize: 11,
+                color: 'var(--accent)',
+                fontWeight: 600,
+                whiteSpace: 'nowrap',
+              }}>{sponsor.name}</span>
+            ))}
+          </div>
+        )}
+
         {tall && (
           <div style={{
             marginTop: 4, paddingTop: 12,
