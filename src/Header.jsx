@@ -20,24 +20,13 @@ const Header = ({ lang, setLang }) => {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '16px 24px',
       }}>
-        {/* Wordmark logo */}
-        <a href="FightFolio Homepage.html" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <span style={{
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            width: 32, height: 32, borderRadius: 8,
-            background: 'var(--accent)',
-            color: 'var(--text-on-accent)',
-          }}>
-            <window.Icon.glove size={17} />
-          </span>
-          <span style={{
-            fontSize: 18, fontWeight: 800,
-            letterSpacing: '-0.03em',
-            color: 'var(--text-primary)',
-          }}>
-            Fight<span style={{ color: 'var(--accent)' }}>Folio</span>
-            <span style={{ color: 'var(--text-tertiary)', fontWeight: 400, fontSize: 13 }}>.at</span>
-          </span>
+        {/* Logo image */}
+        <a href="FightFolio Homepage.html" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img
+            src="img/logo-horizontal.svg"
+            alt="FightFolio"
+            style={{ height: 36, width: 'auto', display: 'block' }}
+          />
         </a>
 
         <nav className="ak-nav-desktop" style={{ display: 'flex', gap: 4, alignItems: 'center' }}>

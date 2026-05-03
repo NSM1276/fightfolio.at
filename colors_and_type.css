@@ -1,6 +1,6 @@
 /* =========================================================
    FightFolio.at — Design tokens
-   Dark MMA theme: Black / Carbon / Gold / Crimson
+   Dark MMA theme: Black / Carbon / Orange / Crimson
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -15,8 +15,8 @@
   /* ---------- Color: brand ---------- */
   --primary: #1A1A2E;        /* dark navy — primary buttons, active state */
   --primary-hover: #22223A;
-  --accent: #D4AF37;         /* gold — CTA, highlights, key headings */
-  --accent-hover: #E8C94A;
+  --accent: #ED681F;         /* orange — logo color, CTA, highlights */
+  --accent-hover: #F57C3A;
   --crimson: #C41E3A;        /* crimson — losses, danger accents */
   --crimson-bg: rgba(196, 30, 58, 0.12);
 
@@ -24,8 +24,8 @@
   --text-primary: #FFFFFF;
   --text-secondary: #9CA3AF;
   --text-tertiary: #6B7280;
-  --text-on-accent: #0D0D14;   /* dark text on gold */
-  --text-on-primary: #D4AF37;  /* gold text on dark button */
+  --text-on-accent: #FFFFFF;   /* white text on orange */
+  --text-on-primary: #ED681F;  /* orange text on dark button */
 
   /* ---------- Color: status ---------- */
   --status-green: #10B981;   /* Pro Fighter */
