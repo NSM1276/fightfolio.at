@@ -17,6 +17,7 @@ const FIGHTERS = [
     featured: true,
     img: ['#1A0A00', '#3D1F00'],
     accentHue: 42,
+    photoPosition: 'center 8%',
     sponsors: [
       { name: 'Venum' },
       { name: 'Monster Energy' },
@@ -38,6 +39,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A3D', '#003580'],
     accentHue: 210,
+    photoPosition: 'center 8%',
     sponsors: [
       { name: 'Gymking' },
       { name: 'Bet-at-home' },
@@ -58,6 +60,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A1A00', '#1A3D00'],
     accentHue: 105,
+    photoPosition: 'center 8%',
     sponsors: [
       { name: 'Ettl Bros' },
       { name: 'Raiffeisen Sport' },
@@ -78,6 +81,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A001A', '#3D003D'],
     accentHue: 300,
+    photoPosition: 'center 12%',
     sponsors: [
       { name: 'Venum' },
       { name: 'MHP' },
@@ -98,6 +102,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#001A00', '#003D00'],
     accentHue: 90,
+    photoPosition: 'center 18%',
     sponsors: [
       { name: 'Steiermärkische Sparkasse' },
       { name: 'Hervis Sports' },
@@ -118,6 +123,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#0A0A1A', '#1A1A3D'],
     accentHue: 220,
+    photoPosition: 'center 5%',
     sponsors: [
       { name: 'Ott Security' },
       { name: 'Empire Sports' }
@@ -138,6 +144,7 @@ const FIGHTERS = [
     reviews: 0,
     img: ['#1A0000', '#3D0000'],
     accentHue: 0,
+    photoPosition: 'center 8%',
     sponsors: [
       { name: 'Eckerlin Logistics' },
       { name: 'Mainova' },

@@ -87,7 +87,7 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
             position: 'absolute', inset: 0,
             width: '100%', height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 20%',
+            objectPosition: r.photoPosition || 'center 10%',
             display: 'block',
           }}
         />
