@@ -38,6 +38,8 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
   const c = window.COPY[lang];
   const [hover, setHover] = React.useState(false);
   const isHovered = hoveredId === r.id || hover;
+  // Track whether the real photo loaded successfully
+  const [photoOk, setPhotoOk] = React.useState(false);
 
   const tall = span === 'lg';
   const wide = span === 'md';
@@ -79,41 +81,65 @@ const FighterCard = ({ r, lang, span = 'sm', onClick, onHoverId, hoveredId }) =>
         <img
           src={`fighters/${r.id}/main.webp`}
           alt={r.name}
-          onError={(e) => { e.target.style.display = 'none'; }}
+          onLoad={() => setPhotoOk(true)}
+          onError={(e) => { e.target.style.display = 'none'; setPhotoOk(false); }}
           style={{
             position: 'absolute', inset: 0,
             width: '100%', height: '100%',
-            objectFit: 'cover', objectPosition: 'center top',
+            objectFit: 'cover',
+            objectPosition: 'center 20%',
             display: 'block',
           }}
         />
-        {/* Accent glow */}
-        <div aria-hidden style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: `radial-gradient(ellipse at 50% 50%, hsla(${r.accentHue}, 70%, 55%, 0.22) 0%, transparent 65%)`,
-        }} />
-        {/* Fighter name overlay */}
-        <div style={{
-          position: 'absolute', inset: 0,
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          padding: '40px 24px',
-          textAlign: 'center',
-        }}>
-          <span style={{
-            fontSize: tall ? 30 : wide ? 24 : 20,
-            fontWeight: 800,
-            letterSpacing: '-0.03em',
-            lineHeight: 1.05,
-            color: 'rgba(255,255,255,0.95)',
-            textShadow: '0 2px 16px rgba(0,0,0,0.5)',
-            fontFamily: 'inherit',
-          }}>{r.name}</span>
-        </div>
-        {/* Bottom fade */}
-        <div aria-hidden style={{
-          position: 'absolute', inset: 'auto 0 0 0', height: '40%',
-          background: 'linear-gradient(to top, rgba(0,0,0,0.55), transparent)',
-        }} />
+        {/* Accent glow — only when no photo */}
+        {!photoOk && (
+          <div aria-hidden style={{
+            position: 'absolute', inset: 0,
+            backgroundImage: `radial-gradient(ellipse at 50% 50%, hsla(${r.accentHue}, 70%, 55%, 0.22) 0%, transparent 65%)`,
+          }} />
+        )}
+        {/* Name overlay — centered + large when no photo; small pill at bottom when photo exists */}
+        {photoOk ? (
+          <div style={{
+            position: 'absolute', bottom: 0, left: 0, right: 0,
+            padding: '32px 12px 10px',
+            background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)',
+            display: 'flex', alignItems: 'flex-end',
+          }}>
+            <span style={{
+              fontSize: tall ? 15 : 13,
+              fontWeight: 700,
+              letterSpacing: '-0.01em',
+              lineHeight: 1.15,
+              color: 'rgba(255,255,255,0.95)',
+              textShadow: '0 1px 6px rgba(0,0,0,0.8)',
+            }}>{r.name}</span>
+          </div>
+        ) : (
+          <div style={{
+            position: 'absolute', inset: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: '40px 24px',
+            textAlign: 'center',
+          }}>
+            <span style={{
+              fontSize: tall ? 30 : wide ? 24 : 20,
+              fontWeight: 800,
+              letterSpacing: '-0.03em',
+              lineHeight: 1.05,
+              color: 'rgba(255,255,255,0.95)',
+              textShadow: '0 2px 16px rgba(0,0,0,0.5)',
+              fontFamily: 'inherit',
+            }}>{r.name}</span>
+          </div>
+        )}
+        {/* Bottom fade — only when no photo */}
+        {!photoOk && (
+          <div aria-hidden style={{
+            position: 'absolute', inset: 'auto 0 0 0', height: '40%',
+            background: 'linear-gradient(to top, rgba(0,0,0,0.55), transparent)',
+          }} />
+        )}
 
         {/* Status badge top-left */}
         <div style={{ position: 'absolute', top: 12, left: 12 }}>
